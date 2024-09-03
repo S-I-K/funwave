@@ -1,0 +1,19 @@
+/* variable */
+$color-black: #2a2a2a;
+$color-main: #0050A0;
+$color-gray: #ababab;
+$font-kr: 'SUIT Variable', sans-serif;
+$font-en: "Archivo", system-ui;
+
+footer {
+    margin-top: 200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .container {
+        padding-top: 80px;
+        border-top: 1px solid $color-black;
+
+    }
+}

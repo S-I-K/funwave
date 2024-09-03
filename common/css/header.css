@@ -1,0 +1,142 @@
+/* variable */
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  transition: background 0.4s ease;
+}
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 0;
+  /* logo-category-wrap */
+  /* menu-lang-box */
+}
+header .container .logo-category-wrap {
+  display: flex;
+  align-items: center;
+  /* logo-box */
+  /* category-box */
+}
+header .container .logo-category-wrap .logo-box {
+  width: 130px;
+  margin-right: 80px;
+}
+header .container .logo-category-wrap .logo-box a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .container .logo-category-wrap .logo-box a img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+header .container .logo-category-wrap .category-box ul {
+  display: flex;
+  align-items: center;
+}
+header .container .logo-category-wrap .category-box ul li {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+header .container .logo-category-wrap .category-box ul li a {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+header .container .logo-category-wrap .category-box ul li a span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  font-family: "Archivo", system-ui;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  color: #fff;
+}
+header .container .logo-category-wrap .category-box ul li::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 1px;
+  position: absolute;
+  bottom: -26px;
+  background: #0050A0;
+  transition: all 0.4s ease;
+}
+header .container .logo-category-wrap .category-box ul li:hover::after {
+  width: 100%;
+}
+header .container .logo-category-wrap .category-box ul li:not(:last-child) {
+  margin-right: 60px;
+}
+header .container .menu-lang-box {
+  display: flex;
+  align-items: center;
+}
+header .container .menu-lang-box .lang-box {
+  margin-right: 18px;
+}
+header .container .menu-lang-box .lang-box a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+header .container .menu-lang-box .lang-box a span {
+  font-family: "Archivo", system-ui;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  color: #fff;
+  margin-right: 12px;
+  height: 40px;
+}
+header .container .menu-lang-box .lang-box a .icon-box {
+  width: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .container .menu-lang-box .lang-box a .icon-box svg {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+header .container .menu-lang-box .lang-box a .icon-box svg path {
+  fill: #fff;
+  transition: fill 0.4s ease;
+}
+header .container .menu-lang-box .menu-box a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+header .container .menu-lang-box .menu-box a span {
+  position: absolute;
+  width: 16px;
+  height: 2px;
+  display: block;
+  background: #fff;
+  transition: background 0.4s ease;
+}
+header .container .menu-lang-box .menu-box a span:nth-child(1) {
+  top: 16px;
+}
+header .container .menu-lang-box .menu-box a span:nth-child(2) {
+  bottom: 16px;
+}

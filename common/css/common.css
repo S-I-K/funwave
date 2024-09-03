@@ -1,0 +1,62 @@
+/* variable */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#wrap {
+  width: 100%;
+}
+
+section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 1440px;
+  height: auto;
+}
+
+.font-en {
+  font-family: "Archivo", system-ui;
+}
+
+.font-kr {
+  font-family: "SUIT Variable", sans-serif;
+}
+
+.button-effect {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: all 0.4s ease;
+}
+
+.button-effect::after {
+  content: attr(data-hover);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 100%;
+  height: 100%;
+}
+
+.button-effect:hover {
+  transform: translateY(-100%);
+  transform-origin: 0% 0%;
+}

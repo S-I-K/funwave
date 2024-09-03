@@ -1,0 +1,156 @@
+/* variable */
+$color-black: #2a2a2a;
+$color-main: #0050A0;
+$color-gray: #ababab;
+$font-kr: 'SUIT Variable', sans-serif;
+$font-en: "Archivo", system-ui;
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    transition: background .4s ease;
+    .container {
+        // border: 1px solid red;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 24px 0;
+
+        /* logo-category-wrap */
+        .logo-category-wrap {
+            display: flex;
+            align-items: center;
+            /* logo-box */
+            .logo-box {
+                width: 130px;
+                margin-right: 80px;
+                a {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+    
+            /* category-box */
+            .category-box {
+                ul {
+                    display: flex;
+                    align-items: center;
+                    li {
+                        display: flex;
+                        justify-content: center;
+                        position: relative;
+                        a {
+                            display: flex;
+                            justify-content: center;
+                            overflow: hidden;
+                            span {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                height: 40px;
+                                font-family: $font-en;
+                                font-weight: 400;
+                                font-size: 16px;
+                                line-height: 1;
+                                color: #fff;
+                            }
+                        }
+                    }
+                    li::after {
+                        content: '';
+                        display: block;
+                        width: 0%;
+                        height: 1px;
+                        position: absolute;
+                        bottom: -26px;
+                        background: $color-main;
+                        transition: all .4s ease;
+                    }
+                    li:hover::after {
+                        width: 100%;
+                    }
+                    li:not(:last-child) {
+                        margin-right: 60px;
+                    }
+                }
+            }
+        }
+
+        /* menu-lang-box */
+        .menu-lang-box {
+            display: flex;
+            align-items: center;
+            .lang-box {
+                margin-right: 18px;
+                a {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    overflow: hidden;
+                    span {
+                        font-family: $font-en;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 1;
+                        color: #fff;
+                        margin-right: 12px;
+                        height: 40px;
+                    }
+                    .icon-box {
+                        width: 10px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        svg {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            path {
+                                fill: #fff;
+                                transition: fill .4s ease;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .menu-box {
+                a {
+                    // border: 1px solid red;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 40px;
+                    height: 40px;
+                    position: relative;
+                    span {
+                        position: absolute;
+                        width: 16px;
+                        height: 2px;
+                        display: block;
+                        background: #fff;
+                        transition: background .4s ease;
+                    }
+                    span:nth-child(1) {
+                        top: 16px;
+                    }
+                    span:nth-child(2) {
+                        bottom: 16px;
+                    }
+                }
+            }
+        }
+    }
+}

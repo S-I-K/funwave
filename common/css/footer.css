@@ -1,0 +1,12 @@
+/* variable */
+footer {
+  margin-top: 200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .container {
+  padding-top: 80px;
+  border-top: 1px solid #2a2a2a;
+}

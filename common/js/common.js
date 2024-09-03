@@ -25,7 +25,7 @@ $(()=>{
                 $('header .container .menu-lang-box .menu-box a span').css({
                     background: '#2a2a2a',
                 });
-                $('header').css({
+                $('.header-bg').css({
                     background: '#fff',
                 });
             }else {
@@ -41,12 +41,24 @@ $(()=>{
                 $('header .container .menu-lang-box .menu-box a span').css({
                     background: '#fff',
                 });
-                $('header').css({
+                $('.header-bg').css({
                     background: 'transparent',
                 });
             }
         }else{
         }
+    });
+
+    $('header .category-box').mouseenter(()=>{
+        $('.header-bg').css({
+            'height': '520px',
+        });
+        console.log('dd');
+    })
+    .mouseleave(()=>{
+        $('.header-bg').css({
+            'height': '88px',
+        });
     });
 });
 

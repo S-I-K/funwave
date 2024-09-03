@@ -9,16 +9,18 @@ header {
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
     position: fixed;
     top: 0;
     z-index: 99;
-    transition: background .4s ease;
+
     .container {
         // border: 1px solid red;
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding: 24px 0;
+        position: relative;
 
         /* logo-category-wrap */
         .logo-category-wrap {
@@ -44,14 +46,14 @@ header {
     
             /* category-box */
             .category-box {
-                ul {
+                > ul {
                     display: flex;
                     align-items: center;
-                    li {
+                    > li {
                         display: flex;
                         justify-content: center;
                         position: relative;
-                        a {
+                        > a {
                             display: flex;
                             justify-content: center;
                             overflow: hidden;
@@ -67,8 +69,56 @@ header {
                                 color: #fff;
                             }
                         }
+
+                        .drop-menu-box {
+                            position: absolute;
+                            min-width: 120px;
+                            padding: 24px 0;
+                            left: 0;
+                            top: 64px;
+                            opacity: 0;
+                            visibility: hidden;
+                            ul {
+                                width: 100%;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: flex-start;
+                                justify-content: center;
+                                li {
+                                    width: 100%;
+                                    a {
+                                        width: 100%;
+                                        overflow: hidden;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: flex-start;
+                                        span {
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            height: 40px;
+                                            font-family: $font-kr;
+                                            font-weight: 500;
+                                            font-size: 16px;
+                                            line-height: 1;
+                                            letter-spacing: -.8px;
+                                            color: #fff;
+                                        }
+                                    }
+                                }
+                                li:not(:last-child) {
+                                    margin-bottom: 24px;
+                                }
+                            }
+                        }
                     }
-                    li::after {
+                    > li:hover {
+                        .drop-menu-box {
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                    }
+                    > li::after {
                         content: '';
                         display: block;
                         width: 0%;
@@ -78,10 +128,10 @@ header {
                         background: $color-main;
                         transition: all .4s ease;
                     }
-                    li:hover::after {
+                    > li:hover::after {
                         width: 100%;
                     }
-                    li:not(:last-child) {
+                    > li:not(:last-child) {
                         margin-right: 60px;
                     }
                 }
@@ -152,5 +202,12 @@ header {
                 }
             }
         }
+    }
+    .header-bg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        transition: background .4s ease;
     }
 }

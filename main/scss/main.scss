@@ -667,6 +667,8 @@ $font-en: "Archivo", system-ui;
                     }
                     .para-box {
                         p {
+                            text-align: center;
+                            min-height: 52px;
                             font-family: $font-kr;
                             font-weight: 400;
                             font-size: 18px;

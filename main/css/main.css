@@ -594,6 +594,8 @@
   color: #2a2a2a;
 }
 #wrap .people-content-wrap .container .people-list-area .people-list-box .para-box p {
+  text-align: center;
+  min-height: 52px;
   font-family: "SUIT Variable", sans-serif;
   font-weight: 400;
   font-size: 18px;

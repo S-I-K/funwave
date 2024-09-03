@@ -53,12 +53,54 @@ $(()=>{
         $('.header-bg').css({
             'height': '520px',
         });
-        console.log('dd');
+
+        if(window.scrollY == 0) {
+            $('.header-bg').css({
+                'height': '520px',
+            });
+            $('header .container .logo-category-wrap .category-box ul li a span').css({
+                color: '#2a2a2a',
+            });
+            $('header .container .menu-lang-box .lang-box a span').css({
+                color: '#2a2a2a',
+            });
+            $('header .container .menu-lang-box .lang-box a .icon-box svg path').css({
+                fill: '#2a2a2a',
+            });
+            $('header .container .menu-lang-box .menu-box a span').css({
+                background: '#2a2a2a',
+            });
+            $('.header-bg').css({
+                background: '#fff',
+            });
+        }else{
+
+        }
     })
     .mouseleave(()=>{
         $('.header-bg').css({
             'height': '88px',
         });
+
+        if(window.scrollY == 0) {
+            $('header .container .logo-category-wrap .category-box ul li a span').css({
+                color: '#fff',
+            });
+            $('header .container .menu-lang-box .lang-box a span').css({
+                color: '#fff',
+            });
+            $('header .container .menu-lang-box .lang-box a .icon-box svg path').css({
+                fill: '#fff',
+            });
+            $('header .container .menu-lang-box .menu-box a span').css({
+                background: '#fff',
+            });
+            $('.header-bg').css({
+                background: 'transparent',
+            });
+        }else{
+
+        }
     });
 });
 

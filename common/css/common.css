@@ -60,3 +60,99 @@ section {
   transform: translateY(-100%);
   transform-origin: 0% 0%;
 }
+
+/* sub page visual section background css */
+.subpage-visual-content-wrap {
+  height: 540px;
+}
+.subpage-visual-content-wrap .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.subpage-visual-content-wrap .container .title-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.subpage-visual-content-wrap .container .title-box h2.title {
+  font-family: "Archivo", system-ui;
+  font-weight: 500;
+  font-size: 100px;
+  line-height: 1;
+  letter-spacing: -4px;
+  color: #fff;
+  margin-bottom: 18px;
+}
+.subpage-visual-content-wrap .container .title-box span.comment {
+  font-family: "SUIT Variable", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: -0.8px;
+  color: #fff;
+}
+
+.subpage-visual-content-wrap.company {
+  background: url("../../company/img/company-visual-back.jpg") no-repeat center center/cover;
+}
+
+.page-nav-content-wrap {
+  background: #F9F9F9;
+  border-top: 1px solid #d6d6d6;
+  border-bottom: 1px solid #d6d6d6;
+}
+.page-nav-content-wrap .container .btn-list-area {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.page-nav-content-wrap .container .btn-list-area .home-icon-box {
+  width: 60px;
+  height: 60px;
+  padding: 18px 18px;
+  border-left: 1px solid #d6d6d6;
+  border-right: 1px solid #d6d6d6;
+}
+.page-nav-content-wrap .container .btn-list-area .home-icon-box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.page-nav-content-wrap .container .btn-list-area a.category-btn-box {
+  width: 220px;
+  height: 60px;
+  padding: 22px 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-right: 1px solid #d6d6d6;
+}
+.page-nav-content-wrap .container .btn-list-area a.category-btn-box span.name {
+  font-family: "Archivo", system-ui;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1;
+  color: #2a2a2a;
+}
+.page-nav-content-wrap .container .btn-list-area a.category-btn-box span.name.font-kr {
+  font-family: "SUIT Variable", sans-serif;
+  font-weight: 500;
+}
+.page-nav-content-wrap .container .btn-list-area a.category-btn-box .hamburger-icon-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.page-nav-content-wrap .container .btn-list-area a.category-btn-box .hamburger-icon-box span {
+  width: 14px;
+  height: 1px;
+  display: block;
+  background: #2a2a2a;
+}
+.page-nav-content-wrap .container .btn-list-area a.category-btn-box .hamburger-icon-box span:not(:last-child) {
+  margin-bottom: 4px;
+}

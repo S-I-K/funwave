@@ -1,0 +1,42 @@
+/* variable */
+$color-black: #2a2a2a;
+$color-main: #0050A0;
+$color-gray: #ababab;
+$font-kr: 'SUIT Variable', sans-serif;
+$font-en: "Archivo", system-ui;
+
+#wrap {
+    .subpage-visual-content-wrap.company {
+        .container {
+            .title-box {
+                h2.title {
+                }
+                span.comment {
+                }
+            }
+        }
+    }
+    .page-nav-content-wrap {
+        .container {
+            .btn-list-area {
+                .home-icon-box {
+                    img {
+                    }
+                }
+                a.category-btn-box {
+                    span.name {
+                    }
+                    span.name.font-kr {
+                    }
+                    .hamburger-icon-box {
+                        span {
+                        }
+                        span:not(:last-child) {
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

@@ -12,7 +12,6 @@ header .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 24px 0;
   position: relative;
   /* logo-category-wrap */
   /* menu-lang-box */
@@ -39,6 +38,9 @@ header .container .logo-category-wrap .logo-box a img {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+header .container .logo-category-wrap .category-box {
+  padding: 24px 0;
 }
 header .container .logo-category-wrap .category-box > ul {
   display: flex;

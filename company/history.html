@@ -20,9 +20,13 @@
 
     <!-- js -->
     <script src="../common/js/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
     <script src="../common/js/lenis.min.js"></script>
     <script src="../common/js/swiper-bundle.min.js"></script>
     <script src="../common/js/common.js" defer></script>
+    <script src="./js/company.js" defer></script>
 </head>
 <body>
     <div id="wrap">
@@ -34,7 +38,7 @@
                 <div class="logo-category-wrap">
                     <!-- logo-box -->
                     <div class="logo-box">
-                        <a href="#">
+                        <a href="../">
                             <img src="../common/img/logo.png" alt="">
                         </a>
                     </div>
@@ -42,7 +46,7 @@
                     <div class="category-box">
                         <ul>
                             <li>
-                                <a href="#">
+                                <a href="../">
                                     <span class="button-effect">
                                         Company
                                     </span>
@@ -51,21 +55,21 @@
                                 <div class="drop-menu-box">
                                     <ul>
                                         <li>
-                                            <a href="#">
+                                            <a href="./ceo.html">
                                                 <span class="button-effect">
                                                     CEO 인사말
                                                 </span>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#">
+                                            <a href="./funwave.html">
                                                 <span class="button-effect">
                                                     FUNWAVE
                                                 </span>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#">
+                                            <a href="./history.html">
                                                 <span class="button-effect">
                                                     회사연혁
                                                 </span>
@@ -75,21 +79,21 @@
                                 </div>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="../">
                                     <span class="button-effect">
                                         Business
                                     </span>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="../">
                                     <span class="button-effect">
                                         IR
                                     </span>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="../">
                                     <span class="button-effect">
                                         Careers
                                     </span>
@@ -98,21 +102,21 @@
                                 <div class="drop-menu-box">
                                     <ul>
                                         <li>
-                                            <a href="#">
+                                            <a href="../careers/">
                                                 <span class="button-effect">
                                                     인사제도
                                                 </span>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#">
+                                            <a href="../careers/">
                                                 <span class="button-effect">
                                                     인재상
                                                 </span>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#">
+                                            <a href="../careers/">
                                                 <span class="button-effect">
                                                     채용안내
                                                 </span>
@@ -171,42 +175,477 @@
             <div class="container">
                 <div class="btn-list-area">
                     <!-- home-icon-box -->
-                    <a href='#' class="home-icon-box">
+                    <a href='../' class="home-icon-box">
                         <img src="./img/icon-home.svg" alt="">
                     </a>
-                    <!-- categort-btn-box -->
-                    <a href="#" class="category-btn-box">
-                        <span class="name">
-                            Company
-                        </span>
-                        <div class="hamburger-icon-box">
-                            <span></span>
-                            <span></span>
-                        </div>
 
-                        <!-- dropdown-menu-box -->
-                        <div class="dropdown-menu-box">
-                            
-                        </div>
-                    </a>
                     <!-- categort-btn-box -->
-                    <a href="#" class="category-btn-box">
-                        <span class="name font-kr">
-                            FUNWAVE
-                        </span>
-                        <div class="hamburger-icon-box">
-                            <span></span>
-                            <span></span>
+                    <div class="category-btn-box">
+                        <a href="../">
+                            <span class="name">
+                                Company
+                            </span>
+                            <div class="hamburger-icon-box">
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                        <!-- drop-down-box -->
+                        <div class="drop-down-box">
+                            <ul>
+                                <li>
+                                    <a href="../">
+                                        <span>
+                                            Company
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../">
+                                        <span>
+                                            Business
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../">
+                                        <span>
+                                            IR
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../">
+                                        <span>
+                                            Careers
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
-                    </a>
+                    </div>
+
+                    <!-- categort-btn-box -->
+                    <div class="category-btn-box">
+                        <a href="./ceo.html">
+                            <span class="name font-kr">
+                                회사연혁
+                            </span>
+                            <div class="hamburger-icon-box">
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                        <!-- drop-down-box -->
+                        <div class="drop-down-box">
+                            <ul>
+                                <li>
+                                    <a href="./ceo.html">
+                                        <span class="font-kr">
+                                            CEO 인사말
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./funwave.html">
+                                        <span>
+                                            FUNWAVE
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./history.html">
+                                        <span class="font-kr">
+                                            회사연혁
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!--  -->
-        <section class="">
+        <!-- history-content-wrap -->
+        <section class="history-content-wrap">
             <div class="container">
+                <div class="section-title-box">
+                    <h2 class="title">
+                        HISTORY
+                    </h2>
+                </div>
 
+                <div class="history-text-area 2021 right">
+                    <div class="text-box">
+                        <div class="circle">
+                            <span></span>
+                        </div>
+                        <div class="year-box">
+                            <span>
+                                2021
+                            </span>
+                        </div>
+                        <div class="year-list-box">
+                            <ul>
+                                <li class="gsap-fade-up">
+                                    <span>
+                                        남원시 보건소 치매예방 앱 기억하리 개발
+                                    </span>
+                                </li>
+                                <li class="gsap-fade-up">
+                                    <span>
+                                        원광대학교 VR 콘텐츠 2종 (콜로세움, 스마트팩토리)
+                                    </span>
+                                </li>
+                                <li class="gsap-fade-up">
+                                    <span>
+                                        AI 기반 의료통역 교육 VR 콘텐츠 개발 사업
+                                    </span>
+                                </li>
+                                <li class="gsap-fade-up">
+                                    <span>
+                                        전북대학교 간호실습 VR 교육 콘텐츠 개발 납품
+                                    </span>
+                                </li>
+                                <li class="gsap-fade-up">
+                                    <span>
+                                        VR 스마트팜 온라인화를 통한 메타버스 콘텐츠 고도화
+                                    </span>
+                                </li>
+                                <li class="gsap-fade-up">
+                                    <span>
+                                        산림청 산불상황 VR 지휘 훈련 콘텐츠 개발 납품
+                                    </span>
+                                </li>
+                                <li class="gsap-fade-up">
+                                    <span>
+                                        원광대학교 AI 체험관 메타버스 콘텐츠 개발 납품
+                                    </span>
+                                </li>
+                                <li class="gsap-fade-up">
+                                    <span>
+                                        렛츠팜 식물재배기 교육용 시스템 개발
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="history-text-area 2020 left">
+                    <div class="text-box">
+                        <div class="circle">
+                            <span></span>
+                        </div>
+                        <div class="year-box">
+                            <span>
+                                2020
+                            </span>
+                        </div>
+                        <div class="year-list-box">
+                            <ul>
+                                <li class="gsap-fade-up">
+                                    <span>
+                                        남원시 보건소 치매예방 앱 기억하리 개발
+                                    </span>
+                                </li>
+                                <li class="gsap-fade-up">
+                                    <span>
+                                        원광대학교 VR 콘텐츠 2종 (콜로세움, 스마트팩토리)
+                                    </span>
+                                </li>
+                                <li class="gsap-fade-up">
+                                    <span>
+                                        AI 기반 의료통역 교육 VR 콘텐츠 개발 사업
+                                    </span>
+                                </li>
+                                <li class="gsap-fade-up">
+                                    <span>
+                                        전북대학교 간호실습 VR 교육 콘텐츠 개발 납품
+                                    </span>
+                                </li>
+                                <li class="gsap-fade-up">
+                                    <span>
+                                        VR 스마트팜 온라인화를 통한 메타버스 콘텐츠 고도화
+                                    </span>
+                                </li>
+                                <li class="gsap-fade-up">
+                                    <span>
+                                        산림청 산불상황 VR 지휘 훈련 콘텐츠 개발 납품
+                                    </span>
+                                </li>
+                                <li class="gsap-fade-up">
+                                    <span>
+                                        원광대학교 AI 체험관 메타버스 콘텐츠 개발 납품
+                                    </span>
+                                </li>
+                                <li class="gsap-fade-up">
+                                    <span>
+                                        렛츠팜 식물재배기 교육용 시스템 개발
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="history-text-area 2019 right">
+                    <div class="text-box">
+                        <div class="circle">
+                            <span></span>
+                        </div>
+                        <div class="year-box">
+                            <span>
+                                2019
+                            </span>
+                        </div>
+                        <div class="year-list-box">
+                            <ul>
+                                <li class="gsap-fade-up">
+                                    <span>
+                                        남원시 보건소 치매예방 앱 기억하리 개발
+                                    </span>
+                                </li>
+                                <li class="gsap-fade-up">
+                                    <span>
+                                        원광대학교 VR 콘텐츠 2종 (콜로세움, 스마트팩토리)
+                                    </span>
+                                </li>
+                                <li class="gsap-fade-up">
+                                    <span>
+                                        AI 기반 의료통역 교육 VR 콘텐츠 개발 사업
+                                    </span>
+                                </li>
+                                <li class="gsap-fade-up">
+                                    <span>
+                                        전북대학교 간호실습 VR 교육 콘텐츠 개발 납품
+                                    </span>
+                                </li>
+                                <li class="gsap-fade-up">
+                                    <span>
+                                        VR 스마트팜 온라인화를 통한 메타버스 콘텐츠 고도화
+                                    </span>
+                                </li>
+                                <li class="gsap-fade-up">
+                                    <span>
+                                        산림청 산불상황 VR 지휘 훈련 콘텐츠 개발 납품
+                                    </span>
+                                </li>
+                                <li class="gsap-fade-up">
+                                    <span>
+                                        원광대학교 AI 체험관 메타버스 콘텐츠 개발 납품
+                                    </span>
+                                </li>
+                                <li class="gsap-fade-up">
+                                    <span>
+                                        렛츠팜 식물재배기 교육용 시스템 개발
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="history-text-area 2018 left">
+                    <div class="text-box">
+                        <div class="circle">
+                            <span></span>
+                        </div>
+                        <div class="year-box">
+                            <span>
+                                2018
+                            </span>
+                        </div>
+                        <div class="year-list-box">
+                            <ul>
+                                <li class="gsap-fade-up">
+                                    <span>
+                                        남원시 보건소 치매예방 앱 기억하리 개발
+                                    </span>
+                                </li>
+                                <li class="gsap-fade-up">
+                                    <span>
+                                        원광대학교 VR 콘텐츠 2종 (콜로세움, 스마트팩토리)
+                                    </span>
+                                </li>
+                                <li class="gsap-fade-up">
+                                    <span>
+                                        AI 기반 의료통역 교육 VR 콘텐츠 개발 사업
+                                    </span>
+                                </li>
+                                <li class="gsap-fade-up">
+                                    <span>
+                                        전북대학교 간호실습 VR 교육 콘텐츠 개발 납품
+                                    </span>
+                                </li>
+                                <li class="gsap-fade-up">
+                                    <span>
+                                        VR 스마트팜 온라인화를 통한 메타버스 콘텐츠 고도화
+                                    </span>
+                                </li>
+                                <li class="gsap-fade-up">
+                                    <span>
+                                        산림청 산불상황 VR 지휘 훈련 콘텐츠 개발 납품
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="history-text-area 2017 right">
+                    <div class="text-box">
+                        <div class="circle">
+                            <span></span>
+                        </div>
+                        <div class="year-box">
+                            <span>
+                                2017
+                            </span>
+                        </div>
+                        <div class="year-list-box">
+                            <ul>
+                                <li class="gsap-fade-up">
+                                    <span>
+                                        남원시 보건소 치매예방 앱 기억하리 개발
+                                    </span>
+                                </li>
+                                <li class="gsap-fade-up">
+                                    <span>
+                                        원광대학교 VR 콘텐츠 2종 (콜로세움, 스마트팩토리)
+                                    </span>
+                                </li>
+                                <li class="gsap-fade-up">
+                                    <span>
+                                        AI 기반 의료통역 교육 VR 콘텐츠 개발 사업
+                                    </span>
+                                </li>
+                                <li class="gsap-fade-up">
+                                    <span>
+                                        전북대학교 간호실습 VR 교육 콘텐츠 개발 납품
+                                    </span>
+                                </li>
+                                <li class="gsap-fade-up">
+                                    <span>
+                                        VR 스마트팜 온라인화를 통한 메타버스 콘텐츠 고도화
+                                    </span>
+                                </li>
+                                <li class="gsap-fade-up">
+                                    <span>
+                                        산림청 산불상황 VR 지휘 훈련 콘텐츠 개발 납품
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="history-text-area 2016 center">
+                    <div class="text-box">
+                        <div class="circle">
+                            <span></span>
+                        </div>
+                        <div class="year-box">
+                            <span>
+                                2016
+                            </span>
+                        </div>
+                        <div class="year-list-box">
+                            <ul>
+                                <li class="gsap-fade-up">
+                                    <span>
+                                        전주정보문화산업진흥원 융복합 아이디어 공모전 최우수상
+                                    </span>
+                                </li>
+                                <li class="gsap-fade-up">
+                                    <span>
+                                        모바일 게임 '택틱스 크러시' 출시
+                                    </span>
+                                </li>
+                                <li class="gsap-fade-up">
+                                    <span>
+                                        '택틱스 크러시' 게임 프로그램 1종, 캐릭터 27종 저작권 등록
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="history-text-area 2015 center">
+                    <div class="text-box">
+                        <div class="circle">
+                            <span></span>
+                        </div>
+                        <div class="year-box">
+                            <span>
+                                2015
+                            </span>
+                        </div>
+                        <div class="year-list-box">
+                            <ul>
+                                <li class="gsap-fade-up">
+                                    <span>
+                                        중소벤처기업부 창업성장기술개발산업 선정
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="history-text-area 2014 center">
+                    <div class="text-box">
+                        <div class="circle">
+                            <span></span>
+                        </div>
+                        <div class="year-box">
+                            <span>
+                                2015
+                            </span>
+                        </div>
+                        <div class="year-list-box">
+                            <ul>
+                                <li class="gsap-fade-up">
+                                    <span>
+                                        창업진흥원 창업맞춤형 사업 선정
+                                    </span>
+                                </li>
+                                <li class="gsap-fade-up">
+                                    <span class="bold">
+                                        주식회사 펀웨이브 설립
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- licence-content-wrap -->
+        <section class="licence-content-wrap">
+            <div class="container">
+                <div class="licence-list-box">
+                    <!-- 01 -->
+                    <div class="licence-img-box">
+                        <img src="" alt="특허증 이미지">
+                    </div>
+                    <!-- 02 -->
+                    <div class="licence-img-box">
+                        <img src="" alt="특허증 이미지">
+                    </div>
+                    <!-- 03 -->
+                    <div class="licence-img-box">
+                        <img src="" alt="특허증 이미지">
+                    </div>
+                    <!-- 04 -->
+                    <div class="licence-img-box">
+                        <img src="" alt="특허증 이미지">
+                    </div>
+                    <!-- 05 -->
+                    <div class="licence-img-box">
+                        <img src="" alt="특허증 이미지">
+                    </div>
+                    <!-- 06 -->
+                    <div class="licence-img-box">
+                        <img src="" alt="특허증 이미지">
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -248,7 +687,7 @@
                             <!-- Fax -->
                             <li>
                                 <span class="name">
-                                    Fax
+                                    Tel
                                 </span>
                                 <span class="content">
                                     070.8680.6631

@@ -9,7 +9,7 @@ $(()=>{
 
     /* header scroll logo change event */
     $(window).scroll(()=>{
-        console.log(window.scrollY);
+        // console.log(window.scrollY);
         if($(window).width() > 450) {
             /* PC */
             if(window.scrollY >= 60 ) {
@@ -101,6 +101,64 @@ $(()=>{
         }else{
 
         }
+    });
+
+    /* gsap effect */
+    gsap.registerPlugin(ScrollTrigger);
+    $fade_up = gsap.utils.toArray('.gsap-fade-up');
+    $fade_up.forEach(el => {
+        gsap.to(el, {
+            'transform': 'translateY(0px)',
+            'opacity': 1,
+            'duration': 2,
+            'ease': 'ease',
+            scrollTrigger: {
+                markers: false,
+                trigger: el,
+                start: '-20% 100%',
+                end: 'top 70%',
+                scrub: 2,
+                // toggleClass: 'active',
+            }
+        })
+    });
+
+    gsap.fromTo('.gsap-fade-up-01', {
+        y: 20,
+        opacity: 0,
+    },{
+        y: 0,
+        opacity: 1,
+        duration: .4,
+        delay: .8,
+    });
+
+    gsap.fromTo('.gsap-fade-up-02', {
+        y: 20,
+        opacity: 0,
+    },{
+        y: 0,
+        opacity: 1,
+        duration: .4,
+        delay: 1,
+    });
+
+    gsap.fromTo('.gsap-fade-up-03', {
+        y: 20,
+        opacity: 0,
+    },{
+        y: 0,
+        opacity: 1,
+        duration: .4,
+        delay: 1.2,
+    });
+
+    gsap.fromTo('.gsap-opacity-01', {
+        opacity: 0,
+    },{
+        opacity: 1,
+        duration: 1,
+        delay: 1.2,
     });
 });
 

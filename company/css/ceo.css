@@ -8,10 +8,9 @@
   justify-content: flex-start;
 }
 #wrap .ceo-about-content-wrap .container .ceo-img-box {
-  width: 586px;
+  width: 464px;
   height: 620px;
-  border: 1px solid #c8c8c8;
-  margin-right: 64px;
+  margin-right: 80px;
   display: flex;
   align-items: center;
   justify-content: center;

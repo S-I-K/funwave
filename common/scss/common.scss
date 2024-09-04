@@ -12,6 +12,10 @@ $font-en: "Archivo", system-ui;
     box-sizing: border-box;
 }
 
+img {
+    pointer-events: none !important;
+}
+
 /* gsap css */
 .gsap-fade-up {
     transform: translateY(44px);
@@ -134,6 +138,8 @@ section {
                 height: 60px;
                 padding: 22px 22px;
                 display: flex;
+                align-items: center;
+                justify-content: center;
                 border-right: 1px solid #d6d6d6;
                 position: relative;
                 a {
@@ -142,6 +148,7 @@ section {
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
+                    position: relative;
                     span.name {
                         font-family: $font-en;
                         font-weight: 400;
@@ -228,6 +235,20 @@ section {
                         }
                     }
                 }
+            }
+            .category-btn-box::before {
+                content: '';
+                display: block;
+                width: 90%;
+                height: 80%;
+                background: rgba(255, 255, 255, 1);
+                border-radius: 8px;
+                position: absolute;
+                transition: all .4s ease;
+                opacity: 0;
+            }
+            .category-btn-box:hover::before {
+                opacity: 1;
             }
             .category-btn-box.active {
                 .drop-down-box {

@@ -1,0 +1,159 @@
+/* variable */
+$color-black: #2a2a2a;
+$color-main: #0050A0;
+$color-gray: #ababab;
+$font-kr: 'SUIT Variable', sans-serif;
+$font-en: "Archivo", system-ui;
+
+#wrap {
+    .business-about-content-wrap {
+        padding-top: 200px;
+        .container {
+            border: 1px solid red;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .section-title-box {
+                margin-bottom: 120px;
+                h2.title {
+                    font-family: $font-kr;
+                    font-weight: 700;
+                    font-size: 62px;
+                    line-height: 1.2;
+                    letter-spacing: -2px;
+                    color: $color-black;
+                    text-align: center;
+                    span.color {
+                        color: $color-main;
+                    }
+                }
+            }
+
+            .business-list-box {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 80px;
+                .business-item-box {
+                    width: calc(100% / 6 - 24px);
+                    height: 460px;
+                    margin: 0 12px;
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .thumb-img-box {
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        overflow: hidden;
+                        img {
+                            transition: all .4s ease;
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+
+                    .title-box {
+                        position: absolute;
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 0 30px;
+                        .icon-box {
+                            width: 80px;
+                            height: 80px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin-bottom: 14px;
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                        }
+                        span.title {
+                            display: flex;
+                            align-items: flex-start;
+                            justify-content: center;
+                            width: 100%;
+                            height: 60px;
+                            padding-top: 14px;
+                            border-top: 2px solid $color-gray;
+                            font-family: $font-en;
+                            font-weight: 500;
+                            font-size: 32px;
+                            line-height: 1;
+                            letter-spacing: -2px;
+                            color: #fff;
+                            img {
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                        }
+                    }
+                }
+                .business-item-box:nth-child(1)::after {
+                    content: '';
+                    display: block;
+                    width: 100px;
+                    height: 100px;
+                    background: #fff;
+                    rotate: 45deg;
+                    position: absolute;
+                    left: -50px;
+                    top: -50px;
+                }
+                .business-item-box:nth-child(6)::after {
+                    content: '';
+                    display: block;
+                    width: 100px;
+                    height: 100px;
+                    background: #fff;
+                    rotate: 45deg;
+                    position: absolute;
+                    right: -50px;
+                    bottom: -50px;
+                }
+                .business-item-box:hover {
+                    .thumb-img-box {
+                        img {
+                            scale: 1.06;
+                        }
+                    }
+                }
+            }
+
+            .para-box {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                p.title-para {
+                    font-weight: 700;
+                    font-size: 32px;
+                    letter-spacing: -1px;
+                }
+                p {
+                    font-family: $font-kr;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 1.4;
+                    letter-spacing: -.8px;
+                    color: $color-black;
+                    text-align: center;
+                }
+                p:not(:last-child) {
+                    margin-bottom: 42px;
+                }
+            }
+        }
+    }
+}

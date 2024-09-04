@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+img {
+  pointer-events: none !important;
+}
+
 /* gsap css */
 .gsap-fade-up {
   transform: translateY(44px);
@@ -132,6 +136,8 @@ section {
   height: 60px;
   padding: 22px 22px;
   display: flex;
+  align-items: center;
+  justify-content: center;
   border-right: 1px solid #d6d6d6;
   position: relative;
 }
@@ -141,6 +147,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
 .page-nav-content-wrap .container .btn-list-area .category-btn-box a span.name {
   font-family: "Archivo", system-ui;
@@ -219,6 +226,20 @@ section {
   transition: all 0.4s ease;
 }
 .page-nav-content-wrap .container .btn-list-area .category-btn-box .drop-down-box ul li:hover::before {
+  opacity: 1;
+}
+.page-nav-content-wrap .container .btn-list-area .category-btn-box::before {
+  content: "";
+  display: block;
+  width: 90%;
+  height: 80%;
+  background: rgb(255, 255, 255);
+  border-radius: 8px;
+  position: absolute;
+  transition: all 0.4s ease;
+  opacity: 0;
+}
+.page-nav-content-wrap .container .btn-list-area .category-btn-box:hover::before {
   opacity: 1;
 }
 .page-nav-content-wrap .container .btn-list-area .category-btn-box.active .drop-down-box {

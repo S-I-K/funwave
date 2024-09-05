@@ -21,6 +21,10 @@ img {
     transform: translateY(44px);
     opacity: 0;
 }
+.gsap-fade-up.project {
+    transform: translateY(88px);
+    opacity: 0;
+}
 
 ul,ol,li {
     list-style: none;

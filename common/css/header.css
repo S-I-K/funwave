@@ -69,7 +69,6 @@ header .container .logo-category-wrap .category-box > ul > li > a span {
 }
 header .container .logo-category-wrap .category-box > ul > li .drop-menu-box {
   position: absolute;
-  min-width: 120px;
   padding: 24px 0;
   left: 0;
   top: 64px;
@@ -77,14 +76,14 @@ header .container .logo-category-wrap .category-box > ul > li .drop-menu-box {
   visibility: hidden;
 }
 header .container .logo-category-wrap .category-box > ul > li .drop-menu-box ul {
-  width: 100%;
+  width: auto;
   display: flex;
-  flex-direction: column;
   align-items: flex-start;
   justify-content: center;
 }
 header .container .logo-category-wrap .category-box > ul > li .drop-menu-box ul li {
-  width: 100%;
+  width: auto;
+  min-width: 80px;
 }
 header .container .logo-category-wrap .category-box > ul > li .drop-menu-box ul li a {
   width: 100%;
@@ -106,7 +105,7 @@ header .container .logo-category-wrap .category-box > ul > li .drop-menu-box ul 
   color: #fff;
 }
 header .container .logo-category-wrap .category-box > ul > li .drop-menu-box ul li:not(:last-child) {
-  margin-bottom: 24px;
+  margin-right: 24px;
 }
 header .container .logo-category-wrap .category-box > ul > li:hover .drop-menu-box {
   opacity: 1;

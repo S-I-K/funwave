@@ -92,6 +92,7 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: scale 0.4s ease;
 }
 #wrap .ir-data-content-wrap .container .data-list-area .list-box > a .thumb-img-box svg path {
   transition: fill 0.4s ease;
@@ -143,6 +144,9 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+#wrap .ir-data-content-wrap .container .data-list-area .list-box a:hover .thumb-img-box svg {
+  scale: 0.98;
 }
 #wrap .ir-data-content-wrap .container .data-list-area .list-box a:hover .thumb-img-box svg path:nth-child(1) {
   fill: #001830;

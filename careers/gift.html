@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>펀웨이브</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="../common/css/header.css">
+    <link rel="stylesheet" href="../common/css/footer.css">
+    <link rel="stylesheet" href="../common/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/gift.css">
+
+    <!-- font -->
+    <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo&display=swap" rel="stylesheet">
+
+    <!-- js -->
+    <script src="../common/js/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+    <script src="../common/js/lenis.min.js"></script>
+    <script src="../common/js/swiper-bundle.min.js"></script>
+    <script src="../common/js/common.js" defer></script>
+</head>
+<body>
+    <div id="wrap">
+        <!-- header -->
+        <header>
+            <div class="header-bg"></div>
+            <div class="container">
+                <!-- logo-category-wrap -->
+                <div class="logo-category-wrap">
+                    <!-- logo-box -->
+                    <div class="logo-box">
+                        <a href="../">
+                            <img src="../common/img/logo.png" alt="">
+                        </a>
+                    </div>
+                    <!-- category-box -->
+                    <div class="category-box">
+                        <ul>
+                            <li>
+                                <a href="../">
+                                    <span class="button-effect">
+                                        Company
+                                    </span>
+                                </a>
+                                <!-- drop-menu-box -->
+                                <div class="drop-menu-box">
+                                    <ul>
+                                        <li>
+                                            <a href="../company/ceo.html">
+                                                <span class="button-effect">
+                                                    CEO 인사말
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../company/funwave.html">
+                                                <span class="button-effect">
+                                                    FUNWAVE
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../company/history.html">
+                                                <span class="button-effect">
+                                                    회사연혁
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="../">
+                                    <span class="button-effect">
+                                        Business
+                                    </span>
+                                </a>
+                                <!-- drop-menu-box -->
+                                <div class="drop-menu-box">
+                                    <ul>
+                                        <li>
+                                            <a href="../business/game.html">
+                                                <span class="button-effect">
+                                                    GAME
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../business/app.html">
+                                                <span class="button-effect">
+                                                    APP
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../business/ar.html">
+                                                <span class="button-effect">
+                                                    AR
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../business/funwave.html">
+                                                <span class="button-effect">
+                                                    VR
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../business/meta.html">
+                                                <span class="button-effect">
+                                                    META
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../business/unity.html">
+                                                <span class="button-effect">
+                                                    UNITY
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="../ir/ir.html">
+                                    <span class="button-effect">
+                                        IR
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../">
+                                    <span class="button-effect">
+                                        Careers
+                                    </span>
+                                </a>
+                                <!-- drop-menu-box -->
+                                <div class="drop-menu-box">
+                                    <ul>
+                                        <li>
+                                            <a href="../careers/gift.html">
+                                                <span class="button-effect">
+                                                    인사제도
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../careers/people.html">
+                                                <span class="button-effect">
+                                                    인재상
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../careers/recruitmen.html">
+                                                <span class="button-effect">
+                                                    채용안내
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <!-- menu-lang-box -->
+                <div class="menu-lang-box">
+                    <!-- lang-box -->
+                    <div class="lang-box">
+                        <a href="#">
+                            <span class="button-effect">
+                                KR
+                            </span>
+                            <div class="icon-box">
+                                <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.258435 0.263604C0.603015 -0.087868 1.16169 -0.087868 1.50627 0.263604L5 3.82721L8.49373 0.263604C8.83831 -0.087868 9.39698 -0.087868 9.74156 0.263604C10.0861 0.615076 10.0861 1.18492 9.74156 1.5364L5.62392 5.7364C5.27934 6.08787 4.72066 6.08787 4.37608 5.7364L0.258435 1.5364C-0.0861451 1.18492 -0.0861451 0.615076 0.258435 0.263604Z" fill=""/>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- menu-box -->
+                    <div class="menu-box">
+                        <a href="#">
+                            <span></span>
+                            <span></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- visual-content-wrap -->
+        <section class="subpage-visual-content-wrap careers">
+            <div class="container">
+                <div class="title-box">
+                    <h2 class="title">
+                        CAREERS
+                    </h2>
+                    <span class="comment">
+                        펀웨이브와 함께 꿈을 이루실 인재를 찾습니다
+                    </span>
+                </div>
+            </div>
+        </section>
+        <!-- page-nav-content-wrap -->
+        <section class="page-nav-content-wrap">
+            <div class="container">
+                <div class="btn-list-area">
+                    <!-- home-icon-box -->
+                    <a href='../' class="home-icon-box">
+                        <img src="../common/img/icon-home.svg" alt="">
+                    </a>
+
+                    <!-- categort-btn-box -->
+                    <div class="category-btn-box">
+                        <a href="../">
+                            <span class="name">
+                                CAREERS
+                            </span>
+                            <div class="hamburger-icon-box">
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                        <!-- drop-down-box -->
+                        <div class="drop-down-box">
+                            <ul>
+                                <li>
+                                    <a href="../">
+                                        <span>
+                                            Company
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../">
+                                        <span>
+                                            Business
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../">
+                                        <span>
+                                            IR
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../">
+                                        <span>
+                                            Careers
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- categort-btn-box -->
+                    <div class="category-btn-box">
+                        <a href="./gift.html">
+                            <span class="name">
+                                인사제도
+                            </span>
+                            <div class="hamburger-icon-box">
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                        <!-- drop-down-box -->
+                        <div class="drop-down-box">
+                            <ul>
+                                <li>
+                                    <a href="./gift.html">
+                                        <span>
+                                            GIFT
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./people.html">
+                                        <span>
+                                            PEOPLE
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./recruitmen.html">
+                                        <span>
+                                            RECRUITMEN
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- gift-content-wrap -->
+        <section class="gift-content-wrap">
+            <div class="container">
+                <div class="section-title-box">
+                    <h2 class="title">
+                        합리적인 문화를 추구하는 기업<br/>
+                        <span class="bold">쾌적한 근무환경을 제공합니다</span>
+                    </h2>
+                </div>
+
+                <!-- gift-list-area -->
+                <div class="gift-list-area">
+                    <!-- 01 -->
+                    <div class="list-box">
+                        <div class="icon-box">
+                            <img src="./img/gift-icon-watch.svg" alt="">
+                        </div>
+                        <div class="text-box">
+                            <span class="title">
+                                출퇴근 시간 선택
+                            </span>
+                            <span class="desc">
+                                근로시간을 선택할 수 있어, 탄력적인 근무가 가능합니다.
+                            </span>
+                        </div>
+                    </div>
+                    <!-- 02 -->
+                    <div class="list-box">
+                        <div class="icon-box">
+                            <img src="./img/gift-icon-calendar.svg" alt="">
+                        </div>
+                        <div class="text-box">
+                            <span class="title">
+                                자유로운 휴가 사용
+                            </span>
+                            <span class="desc">
+                                사유없는 연월차 사용 및 경조사 휴가를 지급합니다.
+                            </span>
+                        </div>
+                    </div>
+                    <!-- 03 -->
+                    <div class="list-box">
+                        <div class="icon-box">
+                            <img src="./img/gift-icon-medal.svg" alt="">
+                        </div>
+                        <div class="text-box">
+                            <span class="title">
+                                우수사원 포상
+                            </span>
+                            <span class="desc">
+                                매년 우수사원을 선정하여 포상을 지급합니다.
+                            </span>
+                        </div>
+                    </div>
+                    <!-- 04 -->
+                    <div class="list-box">
+                        <div class="icon-box">
+                            <img src="./img/gift-icon-box.svg" alt="">
+                        </div>
+                        <div class="text-box">
+                            <span class="title">
+                                선물 제공
+                            </span>
+                            <span class="desc">
+                                설, 추석에 맞춘 다양한 선물을 제공합니다.
+                            </span>
+                        </div>
+                    </div>
+                    <!-- 05 -->
+                    <div class="list-box">
+                        <div class="icon-box">
+                            <img src="./img/gift-icon-school.svg" alt="">
+                        </div>
+                        <div class="text-box">
+                            <span class="title">
+                                교육 지원
+                            </span>
+                            <span class="desc">
+                                직무관련 교육을 진행하며 근무능력 향상을 도모합니다.
+                            </span>
+                        </div>
+                    </div>
+                    <!-- 06 -->
+                    <div class="list-box">
+                        <div class="icon-box">
+                            <img src="./img/gift-icon-book.svg" alt="">
+                        </div>
+                        <div class="text-box">
+                            <span class="title">
+                                도서구입비 지원
+                            </span>
+                            <span class="desc">
+                                직무와 관련된 도서에 한하여 구입 비용을 지원해드립니다.
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- footer -->
+        <footer>
+            <div class="container">
+                <div class="logo-area">
+                    <div class="logo-box">
+                        <img src="../common/img/logo.png" alt="">
+                    </div>
+                </div>
+
+                <div class="contact-area">
+                    <div class="title-box">
+                        <span>
+                            CONTACT
+                        </span>
+                    </div>
+                    <div class="contact-list-box">
+                        <ul>
+                            <!-- Address -->
+                            <li>
+                                <span class="name">
+                                    Address
+                                </span>
+                                <span class="content">
+                                    (054870) 전북 전주시 덕진구 오공로 123, 전북테크비즈센터 903호
+                                </span>
+                            </li>
+                            <!-- Tel -->
+                            <li>
+                                <span class="name">
+                                    e-Mail
+                                </span>
+                                <span class="content">
+                                    info@funwave.co.kr
+                                </span>
+                            </li>
+                            <!-- Fax -->
+                            <li>
+                                <span class="name">
+                                    Tel
+                                </span>
+                                <span class="content">
+                                    070.8680.6631
+                                </span>
+                            </li>
+                            <!-- e-Mail -->
+                            <li>
+                                <span class="name">
+                                    Fax
+                                </span>
+                                <span class="content">
+                                    0505.300.5766
+                                </span>
+                            </li>
+                            <!-- Address -->
+                            <li>
+                                <span class="copy">
+                                    Copyright 2024 Funwave. All Rights Reserved.
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

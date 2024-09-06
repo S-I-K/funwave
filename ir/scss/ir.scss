@@ -1,0 +1,195 @@
+/* variable */
+$color-black: #2a2a2a;
+$color-main: #0050A0;
+$color-gray: #ababab;
+$font-kr: 'SUIT Variable', sans-serif;
+$font-en: "Archivo", system-ui;
+
+/* section-title-box */
+.section-title-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 80px;
+    span.sub-title {
+        font-family: $font-en;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1;
+        color: $color-black;
+        margin-bottom: 16px;
+    }
+    h2.title {
+        font-family: $font-en;
+        font-weight: 700;
+        font-size: 62px;
+        line-height: 1;
+        letter-spacing: -2px;
+        color: $color-black;
+        margin-bottom: 42px;
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+    h2.title::after {
+        content: '';
+        display: block;
+        width: 45px;
+        height: 6px;
+        background: $color-main;
+        rotate: 45deg;
+        position: absolute;
+        left: - calc(45px + 24px);
+    }
+    h2.title::before {
+        content: '';
+        display: block;
+        width: 45px;
+        height: 6px;
+        background: $color-main;
+        rotate: 45deg;
+        position: absolute;
+        right: - calc(45px + 24px);
+    }
+    p.para {
+        font-family: $font-kr;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 1.5;
+        letter-spacing: -1px;
+        color: $color-black;
+        text-align: center;
+    }
+}
+
+#wrap {
+    .ir-data-content-wrap {
+        padding-top: 200px;
+        .container {
+            .section-title-box {
+
+            }
+
+            .data-list-area {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                flex-wrap: wrap;
+                .list-box {
+                    width: calc(100% / 3 - 24px);
+                    margin: 30px 12px;
+                    > a {
+                        margin-bottom: 24px;
+                        width: 100%;
+                        height: 320px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        position: relative;
+                        .thumb-img-box {
+                            width: 100%;
+                            height: 100%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            svg {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                                path {
+                                    transition: fill .4s ease;
+                                }
+                                path:nth-child(1) {
+                                    fill: #003D7B;
+                                }
+                                path:nth-child(2) {
+                                    fill: $color-main;
+                                }
+                            }
+                        }
+
+                        .text-box {
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                            display: flex;
+                            align-items: flex-end;
+                            justify-content: flex-start;
+                            padding: 30px 40px;
+                            span.title {
+                                font-family: $font-en;
+                                font-weight: 700;
+                                font-size: 52px;
+                                line-height: 1;
+                                letter-spacing: -2px;
+                                color: #fff;
+                                position: relative;
+                            }
+                            span.title::after {
+                                content: '';
+                                display: block;
+                                width: 0%;
+                                height: 2px;
+                                background: #fff;
+                                position: absolute;
+                                left: 0;
+                                bottom: 0;
+                                transition: width .4s ease;
+                            }
+                            .icon-box {
+                                width: 52px;
+                                height: 52px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                }
+                            }
+                        }
+                    }
+                    a:hover {
+                        .thumb-img-box {
+                            svg {
+                                path {
+
+                                }
+                                path:nth-child(1) {
+                                    fill: #001830;
+                                }
+                                path:nth-child(2) {
+                                    fill: #002447;
+                                }
+                            }
+                        }
+                        .text-box {
+                            span.title::after {
+                                width: 100%;
+                            }
+                        }
+                    }
+                    .list-title-box {
+                        width: 100%;
+                        a {
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            span {
+                                font-family: $font-kr;
+                                font-weight: 500;
+                                font-size: 18px;
+                                line-height: 1;
+                                letter-spacing: -.8px;
+                                color: $color-black;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

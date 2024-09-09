@@ -1,0 +1,93 @@
+/* variable */
+/* careers: gift common css */
+.section-title-box {
+  margin-bottom: 80px;
+}
+.section-title-box h2.title {
+  font-family: "SUIT Variable", sans-serif;
+  font-weight: 300;
+  font-size: 62px;
+  line-height: 1.3;
+  letter-spacing: -2px;
+  color: #2a2a2a;
+  text-align: center;
+}
+.section-title-box h2.title span.bold {
+  font-weight: 700;
+}
+
+#wrap .people-content-wrap {
+  padding-top: 200px;
+}
+#wrap .people-content-wrap .container .section-title-box {
+  /* common css */
+}
+#wrap .people-content-wrap .container .people-list-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 420px;
+}
+#wrap .people-content-wrap .container .people-list-box .text-area {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #2a2a2a;
+}
+#wrap .people-content-wrap .container .people-list-box .text-area .text-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#wrap .people-content-wrap .container .people-list-box .text-area .text-box span.sub-title {
+  font-family: "Archivo", system-ui;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1;
+  color: #0050A0;
+  margin-bottom: 12px;
+}
+#wrap .people-content-wrap .container .people-list-box .text-area .text-box h3.title {
+  font-family: "SUIT Variable", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -2px;
+  color: #2a2a2a;
+  margin-bottom: 32px;
+}
+#wrap .people-content-wrap .container .people-list-box .text-area .text-box p {
+  font-family: "SUIT Variable", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: -0.8px;
+  color: #2a2a2a;
+}
+#wrap .people-content-wrap .container .people-list-box .text-area .text-box p span.bold {
+  font-weight: 700;
+}
+#wrap .people-content-wrap .container .people-list-box .img-area {
+  width: 50%;
+  height: 100%;
+}
+#wrap .people-content-wrap .container .people-list-box .img-area .img-box {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#wrap .people-content-wrap .container .people-list-box .img-area .img-box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#wrap .people-content-wrap .container .people-list-box.reverse .text-area {
+  order: 2;
+}

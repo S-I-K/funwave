@@ -71,3 +71,48 @@ footer .container .contact-area .contact-list-box ul li span.copy {
 footer .container .contact-area .contact-list-box ul li:not(:last-child) {
   margin-bottom: 12px;
 }
+
+@media (max-width: 450px) {
+  footer {
+    margin-top: 120px;
+  }
+  footer .container {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .container .logo-area {
+    margin-bottom: 32px;
+  }
+  footer .container .logo-area .logo-box {
+    width: 140px;
+  }
+  footer .container .contact-area {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .container .contact-area .title-box {
+    margin: 0;
+    display: none;
+  }
+  footer .container .contact-area .contact-list-box ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  footer .container .contact-area .contact-list-box ul li span {
+    font-size: 14px;
+    letter-spacing: 0;
+  }
+  footer .container .contact-area .contact-list-box ul li span.name {
+    min-width: 60px;
+    margin-right: 24px;
+  }
+  footer .container .contact-area .contact-list-box ul li span.content {
+    width: 240px;
+  }
+  footer .container .contact-area .contact-list-box ul li:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}

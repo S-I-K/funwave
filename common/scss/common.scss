@@ -37,6 +37,7 @@ a {
 
 #wrap {
     width: 100%;
+    position: relative;
 }
 
 section {
@@ -114,16 +115,16 @@ section {
     }
 }
 .subpage-visual-content-wrap.company {
-    background: url('../../company/img/company-visual-back.jpg') no-repeat center center / cover;
+    background: url('../../company/img/company-visual-back.jpg') no-repeat center center / auto 100%;
 }
 .subpage-visual-content-wrap.business {
-    background: url('../../business/img/business-visual-back.jpg') no-repeat center center / cover;
+    background: url('../../business/img/business-visual-back.jpg') no-repeat center center / auto 100%;
 }
 .subpage-visual-content-wrap.ir {
-    background: url('../../ir/img/ir-visual-back.jpg') no-repeat center center / cover;
+    background: url('../../ir/img/ir-visual-back.jpg') no-repeat center center / auto 100%;
 }
 .subpage-visual-content-wrap.careers {
-    background: url('../../careers/img/careers-visual-back.jpg') no-repeat center center / cover;
+    background: url('../../careers/img/careers-visual-back.jpg') no-repeat center center / auto 100%;
 }
 .page-nav-content-wrap {
     background: #F9F9F9;
@@ -267,6 +268,169 @@ section {
                 .drop-down-box {
                     opacity: 1;
                     height: auto;
+                }
+            }
+        }
+    }
+}
+
+.subpage-visual-content-wrap {
+    animation: back-size 1.6s ease;
+}
+
+@keyframes back-size {
+    0% {
+        background-size: auto 140%;
+    }
+    100% {
+        background-size: auto 100%;
+    }
+}
+
+@media ( max-width: 1024px ) {
+    .container {
+        width: 100%;
+        padding: 0 40px;
+    }
+    /* sub page visual section background css */
+    .subpage-visual-content-wrap {
+        .container {
+            .title-box {
+                h2.title {
+                }
+                span.comment {
+                }
+            }
+        }
+    }
+    .subpage-visual-content-wrap.company {
+    }
+    .subpage-visual-content-wrap.business {
+    }
+    .subpage-visual-content-wrap.ir {
+    }
+    .subpage-visual-content-wrap.careers {
+    }
+    .page-nav-content-wrap {
+        .container {
+            .btn-list-area {
+                .home-icon-box {
+                    img {
+                    }
+                }
+                .category-btn-box {
+                    a {
+                        span.name {
+                        }
+                        span.name.font-kr {
+                        }
+                        .hamburger-icon-box {
+                            span {
+                            }
+                            span:not(:last-child) {
+                            }
+                        }
+                    }
+                    .drop-down-box {
+                        ul {
+                            li {
+                                a {
+                                    span {
+                                    }
+                                    span.font-kr {
+                                    }
+                                }
+                            }
+                            li::before {
+                            }
+                            li:hover::before {
+                            }
+                            li:not(:last-child) {
+                            }
+                        }
+                    }
+                }
+                .category-btn-box::before {
+                }
+                .category-btn-box:hover::before {
+                }
+                .category-btn-box.active {
+                    .drop-down-box {
+                    }
+                }
+            }
+        }
+    }
+}
+@media ( max-width: 450px ) {
+    .container {
+        padding: 0 16px;
+    }
+    /* sub page visual section background css */
+    .subpage-visual-content-wrap {
+        .container {
+            .title-box {
+                h2.title {
+                }
+                span.comment {
+                }
+            }
+        }
+    }
+    .subpage-visual-content-wrap.company {
+    }
+    .subpage-visual-content-wrap.business {
+    }
+    .subpage-visual-content-wrap.ir {
+    }
+    .subpage-visual-content-wrap.careers {
+    }
+    .page-nav-content-wrap {
+        .container {
+            .btn-list-area {
+                .home-icon-box {
+                    img {
+                    }
+                }
+                .category-btn-box {
+                    a {
+                        span.name {
+                        }
+                        span.name.font-kr {
+                        }
+                        .hamburger-icon-box {
+                            span {
+                            }
+                            span:not(:last-child) {
+                            }
+                        }
+                    }
+                    .drop-down-box {
+                        ul {
+                            li {
+                                a {
+                                    span {
+                                    }
+                                    span.font-kr {
+                                    }
+                                }
+                            }
+                            li::before {
+                            }
+                            li:hover::before {
+                            }
+                            li:not(:last-child) {
+                            }
+                        }
+                    }
+                }
+                .category-btn-box::before {
+                }
+                .category-btn-box:hover::before {
+                }
+                .category-btn-box.active {
+                    .drop-down-box {
+                    }
                 }
             }
         }

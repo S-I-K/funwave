@@ -215,3 +215,177 @@ header {
         transition: background .4s ease;
     }
 }
+
+@media ( max-width: 1024px ) {
+    header {    
+        .container {    
+            /* logo-category-wrap */
+            .logo-category-wrap {
+                /* logo-box */
+                .logo-box {
+                    a {
+                        img {
+                        }
+                    }
+                }
+        
+                /* category-box */
+                .category-box {
+                    > ul {
+                        > li {
+                            > a {
+                                span {
+                                }
+                            }
+    
+                            .drop-menu-box {
+                                ul {
+                                    li {
+                                        a {
+                                            span {
+                                            }
+                                        }
+                                    }
+                                    li:not(:last-child) {
+                                    }
+                                }
+                            }
+                        }
+                        > li:hover {
+                            .drop-menu-box {
+                            }
+                        }
+                        > li::after {
+                        }
+                        > li:hover::after {
+                        }
+                        > li:not(:last-child) {
+                        }
+                    }
+                }
+            }
+    
+            /* menu-lang-box */
+            .menu-lang-box {
+                .lang-box {
+                    a {
+                        span {
+                        }
+                        .icon-box {
+                            svg {
+                                path {
+                                }
+                            }
+                        }
+                    }
+                }
+    
+                .menu-box {
+                    a {
+                        span {
+                        }
+                        span:nth-child(1) {
+                        }
+                        span:nth-child(2) {
+                        }
+                    }
+                }
+            }
+        }
+        .header-bg {
+        }
+    }
+}
+@media ( max-width: 450px ) {
+    header {
+        .container {
+            padding-top: 16px;
+            padding-bottom: 16px;
+            /* logo-category-wrap */
+            .logo-category-wrap {
+                /* logo-box */
+                .logo-box {
+                    width: 90px;
+                    margin-right: 0;
+                    a {
+                        img {
+                        }
+                    }
+                }
+        
+                /* category-box */
+                .category-box {
+                    display: none;
+                    pointer-events: none;
+                    > ul {
+                        > li {
+                            > a {
+                                span {
+                                }
+                            }
+    
+                            .drop-menu-box {
+                                ul {
+                                    li {
+                                        a {
+                                            span {
+                                            }
+                                        }
+                                    }
+                                    li:not(:last-child) {
+                                    }
+                                }
+                            }
+                        }
+                        > li:hover {
+                            .drop-menu-box {
+                            }
+                        }
+                        > li::after {
+                        }
+                        > li:hover::after {
+                        }
+                        > li:not(:last-child) {
+                        }
+                    }
+                }
+            }
+    
+            /* menu-lang-box */
+            .menu-lang-box {
+                .lang-box {
+                    a {
+                        span {
+                            font-size: 14px;
+                            height: 30px;
+                        }
+                        .icon-box {
+                            svg {
+                                path {
+                                }
+                            }
+                        }
+                    }
+                }
+    
+                .menu-box {
+                    a {
+                        width: 30px;
+                        height: 30px;
+                        span {
+                            width: 14px;
+                        }
+                        span:nth-child(1) {
+                            top: 17px;
+                        }
+                        span:nth-child(2) {
+                            bottom: 17px;
+                        }
+                    }
+                }
+            }
+        }
+        .header-bg {
+        }
+    }
+}

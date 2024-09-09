@@ -59,6 +59,8 @@ $font-en: "Archivo", system-ui;
         letter-spacing: -1px;
         color: $color-black;
         text-align: center;
+        white-space: pre-line;
+        word-break: keep-all;
     }
 }
 
@@ -667,6 +669,8 @@ $font-en: "Archivo", system-ui;
                     }
                     .para-box {
                         p {
+                            white-space: pre-line;
+                            word-break: keep-all;
                             text-align: center;
                             min-height: 52px;
                             font-family: $font-kr;
@@ -675,6 +679,686 @@ $font-en: "Archivo", system-ui;
                             line-height: 1.5;
                             letter-spacing: -.8px;
                             color: $color-black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media ( max-width: 1024px ) {
+    .section-title-box {
+        span.sub-title {
+            font-size: 16px;
+            margin-bottom: 24px;
+        }
+        h2.title {
+            font-size: 42px;
+        }
+        h2.title::after {
+            width: 32px;
+            height: 4px;
+            left: - calc(32px + 14px);
+        }
+        h2.title::before {
+            width: 32px;
+            height: 4px;
+            right: - calc(32px + 14px);
+        }
+        p.para {
+            font-size: 18px;
+            letter-spacing: -.8px;
+        }
+    }
+    
+    #wrap {
+        .visual-content-wrap {
+            .container {
+                .visual-title-box {
+                    span.sub-title {
+                        font-size: 42px;
+                        letter-spacing: -1px;
+                    }
+                    h1.title {
+                        font-size: 90px;
+
+                    }
+                    p {
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    
+        .business-content-wrap {
+            .container {
+                .section-title-box {
+                    /* common */
+                }
+    
+                .business-list-area {
+                    .business-list-box {
+                        .business-thumb-box {
+                            height: 460px;
+                            margin-bottom: 42px;
+                            .thumb-img-box {
+                                img {
+                                }
+                            }
+                            .thumb-img-box::after {
+                            }
+    
+                            .title-box {
+                                .icon-box {
+                                    width: 90px;
+                                    height: 90px;
+                                    margin-bottom: 32px;
+                                    img {
+                                    }
+                                }
+                                span {
+                                    font-size: 24px;
+                                }
+                            }
+    
+                            .hover-text-box {
+                                .desc-box {
+                                    p {
+                                    }
+                                }
+                            }
+                        }
+                        .business-thumb-box:hover {
+                            .thumb-img-box {
+                            }
+                            .thumb-img-box::after {
+                            }
+                            .title-box {
+                                .icon-box {
+                                    img {
+                                    }
+                                }
+                                span {
+                                }
+                            }
+                            .hover-text-box {
+                                .desc-box {
+                                    p {
+                                    }
+                                }
+                            }
+                        }
+    
+                        .aword-box {
+                            .aword-logo-box {
+                                img {
+                                }
+                            }
+                            .aword-title-box {
+                                span {
+                                }
+                                span.title {
+                                    font-size: 20px;
+                                }
+                                span.sub-title {
+                                }
+                            }
+                        }
+                    }
+    
+                    .business-list-box:nth-child(2) {
+                        .aword-box {
+                            .aword-logo-box {
+                                img {
+                                }
+                            }
+                            .aword-title-box {
+                                span {
+                                }
+                                span.title {
+                                }
+                                span.sub-title {
+                                }
+                            }
+                        }
+                    }
+                    .business-list-box:nth-child(3) {
+                        .aword-box {
+                            .aword-logo-box {
+                                img {
+                                }
+                            }
+                            .aword-title-box {
+                                span {
+                                }
+                                span.title {
+                                }
+                                span.sub-title {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
+        .about-content-wrap {
+            .container {
+                .section-title-box {
+                    margin-bottom: 120px;
+                    span.sub-title {
+                    }
+                    .logo-box {
+                        img {
+                        }
+                    }
+                    p.para {
+                    }
+                }
+    
+                .about-list-area {
+                    .about-list-box {
+                        padding-bottom: 28px;
+                        span.list-sub-title {
+                        }
+                        h3.list-title {
+                            font-size: 34px;
+                            margin-bottom: 42px;
+                        }
+                        span.comment {
+                            font-size: 28px;
+                        }
+                    }
+                }
+            }
+        }
+    
+        .partners-content-wrap {
+            .container {
+                .section-title-box {
+                    /* commons */
+                }
+    
+                .partners-list-area {
+                    .partners-logo-box {
+                        height: 54px;
+                        img {
+                        }
+                    }
+                }
+            }
+        }
+    
+        .game-content-wrap {
+            .container {
+                .section-title-box {
+                    /* commons */
+                }
+    
+                .game-slide-area {
+                    .game-tab-menu-list {
+                        margin-bottom: 60px;
+                        .tab-text-box {
+                            a {
+                                span {
+                                    font-size: 20px;
+                                }
+                            }
+                            a:hover {
+                                span {
+                                }
+                            }
+                        }
+                        .tab-text-box.active {
+                            a {
+                                span {
+                                }
+                            }
+                        }
+                        .tab-text-box:not(:last-child)::after {
+                            
+                        }
+                    }
+                    
+                    .game-content-box {
+                        .slide-content-box {
+                            .tab-slider {
+                                .swiper-wrapper {
+                                    .swiper-slide {
+                                        width: 70%;
+                                        height: 420px;
+                                        .thumb-img-box {
+                                            img {
+                                            }
+                                        }
+                                        .thumb-img-box::after {
+                                        }
+                                        .title-box {
+                                            span {
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .slide-content-box.active {
+                        }
+                    }
+    
+                    .tab-nav-box {
+                        .tab-nav-btn {
+                            padding: 28px 40px;
+                            span {
+                            }
+                        }
+                        .tab-nav-btn:hover {
+                            span {
+                            }
+                        }
+                        .tab-nav-btn:not(:last-child) {
+                            margin-right: 8px;
+                        }
+                        .swiper-button-prev:after,
+                        .swiper-button-next:after {
+                        }
+                    }
+                }
+            }
+        }
+    
+        .people-content-wrap {
+            .container {
+                .section-title-box {
+                    /* commons */
+                }
+    
+                .people-list-area {
+                    .people-list-box {
+                        width: calc(100% / 4 - 16px);
+                        margin: 0 8px;
+                        padding: 48px 16px;
+                        .icon-box {
+                            width: 60px;
+                            height: 60px;
+                            img {
+                            }
+                        }
+                        .title-box {
+                            span {
+                            }
+                        }
+                        .para-box {
+                            p {
+                                white-space: normal;
+                                min-height: 81px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media ( max-width: 450px ) {
+    .section-title-box {
+        margin-bottom: 60px;
+        span.sub-title {
+        }
+        h2.title {
+            font-size: 24px;
+            letter-spacing: 0px;
+            text-align: center;
+            width: 60%;
+            display: flex;
+            justify-content: center;
+            line-height: 1.4;
+            margin-bottom: 24px;
+        }
+        h2.title::after {
+            width: 24px;
+            height: 3px;
+            left: - calc(24px + 14px);
+        }
+        h2.title::before {
+            width: 24px;
+            height: 3px;
+            right: - calc(24px + 14px);
+        }
+        p.para {
+            font-size: 16px;
+            white-space: normal;
+        }
+    }
+    
+    #wrap {
+        .visual-content-wrap {
+            height: 70vh;
+            .container {
+                .visual-title-box {
+                    span.sub-title {
+                        font-size: 28px;
+                        letter-spacing: 0px;
+                    }
+                    h1.title {
+                        font-size: 48px;
+                        letter-spacing: -2px;
+                        margin-bottom: 14px;
+                    }
+                    p {
+                        font-size: 16px;
+                        letter-spacing: 0px;
+                    }
+                }
+            }
+        }
+    
+        .business-content-wrap {
+            padding-top: 120px;
+            padding-bottom: 120px;
+            .container {
+                .section-title-box {
+                    /* common */
+                }
+    
+                .business-list-area {
+                    flex-direction: column;
+                    .business-list-box {
+                        width: 100%;
+                        margin: 0;
+                        .business-thumb-box {
+                            height: 240px;
+                            margin-bottom: 28px;
+                            .thumb-img-box {
+                                img {
+                                }
+                            }
+                            .thumb-img-box::after {
+                            }
+    
+                            .title-box {
+                                .icon-box {
+                                    width: 60px;
+                                    height: 60px;
+                                    margin-bottom: 18px;
+                                    img {
+                                    }
+                                }
+                                span {
+                                    font-size: 20px;
+                                }
+                            }
+    
+                            .hover-text-box {
+                                .desc-box {
+                                    p {
+                                        font-size: 14px;
+                                    }
+                                }
+                            }
+                        }
+                        .business-thumb-box:hover {
+                            .thumb-img-box {
+                            }
+                            .thumb-img-box::after {
+                            }
+                            .title-box {
+                                .icon-box {
+                                    img {
+                                    }
+                                }
+                                span {
+                                }
+                            }
+                            .hover-text-box {
+                                .desc-box {
+                                    p {
+                                    }
+                                }
+                            }
+                        }
+    
+                        .aword-box {
+                            min-height: auto;
+                            .aword-logo-box {
+                                height: 32px;
+                                margin-bottom: 18px;
+                                img {
+                                }
+                            }
+                            .aword-title-box {
+                                span {
+                                }
+                                span.title {
+                                    font-size: 18px;
+                                }
+                                span.sub-title {
+                                    font-size: 14px;
+                                    letter-spacing: 0;
+                                }
+                            }
+                        }
+                    }
+    
+                    .business-list-box:nth-child(2) {
+                        .aword-box {
+                            .aword-logo-box {
+                                img {
+                                }
+                            }
+                            .aword-title-box {
+                                span {
+                                }
+                                span.title {
+                                }
+                                span.sub-title {
+                                }
+                            }
+                        }
+                    }
+                    .business-list-box:nth-child(3) {
+                        .aword-box {
+                            .aword-logo-box {
+                                img {
+                                }
+                            }
+                            .aword-title-box {
+                                span {
+                                }
+                                span.title {
+                                }
+                                span.sub-title {
+                                }
+                            }
+                        }
+                    }
+
+                    .business-list-box:not(:last-child) {
+                        margin-bottom: 42px;
+                    }
+                }
+            }
+        }
+    
+        .about-content-wrap {
+            .container {
+                .section-title-box {
+                    margin-bottom: 72px;
+                    span.sub-title {
+                    }
+                    .logo-box {
+                        height: 42px;
+                        margin-bottom: 18px;
+                        img {
+                        }
+                    }
+                    p.para {
+                        width: 80%;
+                    }
+                }
+    
+                .about-list-area {
+                    flex-direction: column;
+                    align-items: center;
+                    .about-list-box {
+                        width: 100%;
+                        margin: 0;
+                        clip-path: inset(0 40px 0 40px);
+                        span.list-sub-title {
+                            font-size: 14px;
+                            margin-bottom: 24px;
+                        }
+                        h3.list-title {
+                            font-size: 34px;
+                            letter-spacing: 0px;
+                            margin-bottom: 14px;
+                        }
+                        span.comment {
+                            font-size: 18px;
+                            letter-spacing: -.8px;
+                        }
+                    }
+                    .about-list-box:not(:last-child) {
+                        margin-bottom: 32px;
+                    }
+                }
+            }
+        }
+    
+        .partners-content-wrap {
+            padding-top: 120px;
+            .container {
+                .section-title-box {
+                    /* commons */
+                }
+    
+                .partners-list-area {
+                    .partners-logo-box {
+                        width: calc(100% / 3 - 16px);
+                        margin: 14px 8px;
+                        height: 42px;
+                        img {
+                        }
+                    }
+                }
+            }
+        }
+    
+        .game-content-wrap {
+            padding-top: 120px;
+            .container {
+                .section-title-box {
+                    /* commons */
+                }
+    
+                .game-slide-area {
+                    .game-tab-menu-list {
+                        margin-bottom: 42px;
+                        .tab-text-box {
+                            width: calc(100% / 6 - 8px);
+                            a {
+                                span {
+                                    font-size: 16px;
+                                    letter-spacing: 0;
+                                }
+                            }
+                            a:hover {
+                                span {
+                                }
+                            }
+                        }
+                        .tab-text-box.active {
+                            a {
+                                span {
+                                }
+                            }
+                        }
+                        .tab-text-box:not(:last-child)::after {
+                            width: 14px;
+                            height: 1px;
+                            display: none;
+                        }
+                    }
+                    
+                    .game-content-box {
+                        .slide-content-box {
+                            .tab-slider {
+                                .swiper-wrapper {
+                                    .swiper-slide {
+                                        height: 280px;
+                                        .thumb-img-box {
+                                            img {
+                                            }
+                                        }
+                                        .thumb-img-box::after {
+                                        }
+                                        .title-box {
+                                            padding: 20px 0;
+                                            span {
+                                                font-size: 18px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .slide-content-box.active {
+                        }
+                    }
+    
+                    .tab-nav-box {
+                        .tab-nav-btn {
+                            padding: 20px 30px;
+                            span {
+                                font-size: 14px;
+                            }
+                        }
+                        .tab-nav-btn:hover {
+                            span {
+                            }
+                        }
+                        .tab-nav-btn:not(:last-child) {
+                        }
+                        .swiper-button-prev:after,
+                        .swiper-button-next:after {
+                        }
+                    }
+                }
+            }
+        }
+    
+        .people-content-wrap {
+            .container {
+                .section-title-box {
+                    /* commons */
+                }
+    
+                .people-list-area {
+                    flex-wrap: wrap;
+                    .people-list-box {
+                        width: calc(100% / 2 - 14px);
+                        margin: 9px 7px;
+                        padding: 24px 16px;
+                        .icon-box {
+                            width: 32px;
+                            height: 32px;
+                            margin-bottom: 24px;
+                            img {
+                            }
+                        }
+                        .title-box {
+                            margin-bottom: 16px;
+                            span {
+                                font-size: 18px;
+                            }
+                        }
+                        .para-box {
+                            p {
+                                font-size: 14px;
+                                min-height: 84px;
+                            }
                         }
                     }
                 }

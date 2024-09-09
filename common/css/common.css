@@ -31,6 +31,7 @@ a {
 
 #wrap {
   width: 100%;
+  position: relative;
 }
 
 section {
@@ -110,19 +111,19 @@ section {
 }
 
 .subpage-visual-content-wrap.company {
-  background: url("../../company/img/company-visual-back.jpg") no-repeat center center/cover;
+  background: url("../../company/img/company-visual-back.jpg") no-repeat center center/auto 100%;
 }
 
 .subpage-visual-content-wrap.business {
-  background: url("../../business/img/business-visual-back.jpg") no-repeat center center/cover;
+  background: url("../../business/img/business-visual-back.jpg") no-repeat center center/auto 100%;
 }
 
 .subpage-visual-content-wrap.ir {
-  background: url("../../ir/img/ir-visual-back.jpg") no-repeat center center/cover;
+  background: url("../../ir/img/ir-visual-back.jpg") no-repeat center center/auto 100%;
 }
 
 .subpage-visual-content-wrap.careers {
-  background: url("../../careers/img/careers-visual-back.jpg") no-repeat center center/cover;
+  background: url("../../careers/img/careers-visual-back.jpg") no-repeat center center/auto 100%;
 }
 
 .page-nav-content-wrap {
@@ -262,4 +263,30 @@ section {
 .page-nav-content-wrap .container .btn-list-area .category-btn-box.active .drop-down-box {
   opacity: 1;
   height: auto;
+}
+
+.subpage-visual-content-wrap {
+  animation: back-size 1.6s ease;
+}
+
+@keyframes back-size {
+  0% {
+    background-size: auto 140%;
+  }
+  100% {
+    background-size: auto 100%;
+  }
+}
+@media (max-width: 1024px) {
+  .container {
+    width: 100%;
+    padding: 0 40px;
+  }
+  /* sub page visual section background css */
+}
+@media (max-width: 450px) {
+  .container {
+    padding: 0 16px;
+  }
+  /* sub page visual section background css */
 }

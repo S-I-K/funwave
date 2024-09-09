@@ -54,6 +54,8 @@
   letter-spacing: -1px;
   color: #2a2a2a;
   text-align: center;
+  white-space: pre-line;
+  word-break: keep-all;
 }
 
 #wrap .visual-content-wrap {
@@ -594,6 +596,8 @@
   color: #2a2a2a;
 }
 #wrap .people-content-wrap .container .people-list-area .people-list-box .para-box p {
+  white-space: pre-line;
+  word-break: keep-all;
   text-align: center;
   min-height: 52px;
   font-family: "SUIT Variable", sans-serif;
@@ -602,4 +606,310 @@
   line-height: 1.5;
   letter-spacing: -0.8px;
   color: #2a2a2a;
+}
+
+@media (max-width: 1024px) {
+  .section-title-box span.sub-title {
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
+  .section-title-box h2.title {
+    font-size: 42px;
+  }
+  .section-title-box h2.title::after {
+    width: 32px;
+    height: 4px;
+    left: -46px;
+  }
+  .section-title-box h2.title::before {
+    width: 32px;
+    height: 4px;
+    right: -46px;
+  }
+  .section-title-box p.para {
+    font-size: 18px;
+    letter-spacing: -0.8px;
+  }
+  #wrap .visual-content-wrap .container .visual-title-box span.sub-title {
+    font-size: 42px;
+    letter-spacing: -1px;
+  }
+  #wrap .visual-content-wrap .container .visual-title-box h1.title {
+    font-size: 90px;
+  }
+  #wrap .visual-content-wrap .container .visual-title-box p {
+    font-size: 24px;
+  }
+  #wrap .business-content-wrap .container .section-title-box {
+    /* common */
+  }
+  #wrap .business-content-wrap .container .business-list-area .business-list-box .business-thumb-box {
+    height: 460px;
+    margin-bottom: 42px;
+  }
+  #wrap .business-content-wrap .container .business-list-area .business-list-box .business-thumb-box .title-box .icon-box {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 32px;
+  }
+  #wrap .business-content-wrap .container .business-list-area .business-list-box .business-thumb-box .title-box span {
+    font-size: 24px;
+  }
+  #wrap .business-content-wrap .container .business-list-area .business-list-box .aword-box .aword-title-box span.title {
+    font-size: 20px;
+  }
+  #wrap .about-content-wrap .container .section-title-box {
+    margin-bottom: 120px;
+  }
+  #wrap .about-content-wrap .container .about-list-area .about-list-box {
+    padding-bottom: 28px;
+  }
+  #wrap .about-content-wrap .container .about-list-area .about-list-box h3.list-title {
+    font-size: 34px;
+    margin-bottom: 42px;
+  }
+  #wrap .about-content-wrap .container .about-list-area .about-list-box span.comment {
+    font-size: 28px;
+  }
+  #wrap .partners-content-wrap .container .section-title-box {
+    /* commons */
+  }
+  #wrap .partners-content-wrap .container .partners-list-area .partners-logo-box {
+    height: 54px;
+  }
+  #wrap .game-content-wrap .container .section-title-box {
+    /* commons */
+  }
+  #wrap .game-content-wrap .container .game-slide-area .game-tab-menu-list {
+    margin-bottom: 60px;
+  }
+  #wrap .game-content-wrap .container .game-slide-area .game-tab-menu-list .tab-text-box a span {
+    font-size: 20px;
+  }
+  #wrap .game-content-wrap .container .game-slide-area .game-content-box .slide-content-box .tab-slider .swiper-wrapper .swiper-slide {
+    width: 70%;
+    height: 420px;
+  }
+  #wrap .game-content-wrap .container .game-slide-area .tab-nav-box .tab-nav-btn {
+    padding: 28px 40px;
+  }
+  #wrap .game-content-wrap .container .game-slide-area .tab-nav-box .tab-nav-btn:not(:last-child) {
+    margin-right: 8px;
+  }
+  #wrap .people-content-wrap .container .section-title-box {
+    /* commons */
+  }
+  #wrap .people-content-wrap .container .people-list-area .people-list-box {
+    width: calc(25% - 16px);
+    margin: 0 8px;
+    padding: 48px 16px;
+  }
+  #wrap .people-content-wrap .container .people-list-area .people-list-box .icon-box {
+    width: 60px;
+    height: 60px;
+  }
+  #wrap .people-content-wrap .container .people-list-area .people-list-box .para-box p {
+    white-space: normal;
+    min-height: 81px;
+  }
+}
+@media (max-width: 450px) {
+  .section-title-box {
+    margin-bottom: 60px;
+  }
+  .section-title-box h2.title {
+    font-size: 24px;
+    letter-spacing: 0px;
+    text-align: center;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    line-height: 1.4;
+    margin-bottom: 24px;
+  }
+  .section-title-box h2.title::after {
+    width: 24px;
+    height: 3px;
+    left: -38px;
+  }
+  .section-title-box h2.title::before {
+    width: 24px;
+    height: 3px;
+    right: -38px;
+  }
+  .section-title-box p.para {
+    font-size: 16px;
+    white-space: normal;
+  }
+  #wrap .visual-content-wrap {
+    height: 70vh;
+  }
+  #wrap .visual-content-wrap .container .visual-title-box span.sub-title {
+    font-size: 28px;
+    letter-spacing: 0px;
+  }
+  #wrap .visual-content-wrap .container .visual-title-box h1.title {
+    font-size: 48px;
+    letter-spacing: -2px;
+    margin-bottom: 14px;
+  }
+  #wrap .visual-content-wrap .container .visual-title-box p {
+    font-size: 16px;
+    letter-spacing: 0px;
+  }
+  #wrap .business-content-wrap {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  #wrap .business-content-wrap .container .section-title-box {
+    /* common */
+  }
+  #wrap .business-content-wrap .container .business-list-area {
+    flex-direction: column;
+  }
+  #wrap .business-content-wrap .container .business-list-area .business-list-box {
+    width: 100%;
+    margin: 0;
+  }
+  #wrap .business-content-wrap .container .business-list-area .business-list-box .business-thumb-box {
+    height: 240px;
+    margin-bottom: 28px;
+  }
+  #wrap .business-content-wrap .container .business-list-area .business-list-box .business-thumb-box .title-box .icon-box {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 18px;
+  }
+  #wrap .business-content-wrap .container .business-list-area .business-list-box .business-thumb-box .title-box span {
+    font-size: 20px;
+  }
+  #wrap .business-content-wrap .container .business-list-area .business-list-box .business-thumb-box .hover-text-box .desc-box p {
+    font-size: 14px;
+  }
+  #wrap .business-content-wrap .container .business-list-area .business-list-box .aword-box {
+    min-height: auto;
+  }
+  #wrap .business-content-wrap .container .business-list-area .business-list-box .aword-box .aword-logo-box {
+    height: 32px;
+    margin-bottom: 18px;
+  }
+  #wrap .business-content-wrap .container .business-list-area .business-list-box .aword-box .aword-title-box span.title {
+    font-size: 18px;
+  }
+  #wrap .business-content-wrap .container .business-list-area .business-list-box .aword-box .aword-title-box span.sub-title {
+    font-size: 14px;
+    letter-spacing: 0;
+  }
+  #wrap .business-content-wrap .container .business-list-area .business-list-box:not(:last-child) {
+    margin-bottom: 42px;
+  }
+  #wrap .about-content-wrap .container .section-title-box {
+    margin-bottom: 72px;
+  }
+  #wrap .about-content-wrap .container .section-title-box .logo-box {
+    height: 42px;
+    margin-bottom: 18px;
+  }
+  #wrap .about-content-wrap .container .section-title-box p.para {
+    width: 80%;
+  }
+  #wrap .about-content-wrap .container .about-list-area {
+    flex-direction: column;
+    align-items: center;
+  }
+  #wrap .about-content-wrap .container .about-list-area .about-list-box {
+    width: 100%;
+    margin: 0;
+    -webkit-clip-path: inset(0 40px 0 40px);
+            clip-path: inset(0 40px 0 40px);
+  }
+  #wrap .about-content-wrap .container .about-list-area .about-list-box span.list-sub-title {
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
+  #wrap .about-content-wrap .container .about-list-area .about-list-box h3.list-title {
+    font-size: 34px;
+    letter-spacing: 0px;
+    margin-bottom: 14px;
+  }
+  #wrap .about-content-wrap .container .about-list-area .about-list-box span.comment {
+    font-size: 18px;
+    letter-spacing: -0.8px;
+  }
+  #wrap .about-content-wrap .container .about-list-area .about-list-box:not(:last-child) {
+    margin-bottom: 32px;
+  }
+  #wrap .partners-content-wrap {
+    padding-top: 120px;
+  }
+  #wrap .partners-content-wrap .container .section-title-box {
+    /* commons */
+  }
+  #wrap .partners-content-wrap .container .partners-list-area .partners-logo-box {
+    width: calc(33.3333333333% - 16px);
+    margin: 14px 8px;
+    height: 42px;
+  }
+  #wrap .game-content-wrap {
+    padding-top: 120px;
+  }
+  #wrap .game-content-wrap .container .section-title-box {
+    /* commons */
+  }
+  #wrap .game-content-wrap .container .game-slide-area .game-tab-menu-list {
+    margin-bottom: 42px;
+  }
+  #wrap .game-content-wrap .container .game-slide-area .game-tab-menu-list .tab-text-box {
+    width: calc(16.6666666667% - 8px);
+  }
+  #wrap .game-content-wrap .container .game-slide-area .game-tab-menu-list .tab-text-box a span {
+    font-size: 16px;
+    letter-spacing: 0;
+  }
+  #wrap .game-content-wrap .container .game-slide-area .game-tab-menu-list .tab-text-box:not(:last-child)::after {
+    width: 14px;
+    height: 1px;
+    display: none;
+  }
+  #wrap .game-content-wrap .container .game-slide-area .game-content-box .slide-content-box .tab-slider .swiper-wrapper .swiper-slide {
+    height: 280px;
+  }
+  #wrap .game-content-wrap .container .game-slide-area .game-content-box .slide-content-box .tab-slider .swiper-wrapper .swiper-slide .title-box {
+    padding: 20px 0;
+  }
+  #wrap .game-content-wrap .container .game-slide-area .game-content-box .slide-content-box .tab-slider .swiper-wrapper .swiper-slide .title-box span {
+    font-size: 18px;
+  }
+  #wrap .game-content-wrap .container .game-slide-area .tab-nav-box .tab-nav-btn {
+    padding: 20px 30px;
+  }
+  #wrap .game-content-wrap .container .game-slide-area .tab-nav-box .tab-nav-btn span {
+    font-size: 14px;
+  }
+  #wrap .people-content-wrap .container .section-title-box {
+    /* commons */
+  }
+  #wrap .people-content-wrap .container .people-list-area {
+    flex-wrap: wrap;
+  }
+  #wrap .people-content-wrap .container .people-list-area .people-list-box {
+    width: calc(50% - 14px);
+    margin: 9px 7px;
+    padding: 24px 16px;
+  }
+  #wrap .people-content-wrap .container .people-list-area .people-list-box .icon-box {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 24px;
+  }
+  #wrap .people-content-wrap .container .people-list-area .people-list-box .title-box {
+    margin-bottom: 16px;
+  }
+  #wrap .people-content-wrap .container .people-list-area .people-list-box .title-box span {
+    font-size: 18px;
+  }
+  #wrap .people-content-wrap .container .people-list-area .people-list-box .para-box p {
+    font-size: 14px;
+    min-height: 84px;
+  }
 }

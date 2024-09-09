@@ -2,7 +2,7 @@ $(()=>{
     /* swiper */
     var swiper = new Swiper(".tab-slider", {
         slidesPerView: 'auto',
-        spaceBetween: 24,
+        spaceBetween: 16,
         loop: true,
         speed: 1200,
         autoplay:{
@@ -12,6 +12,13 @@ $(()=>{
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
+        },
+
+        breakpoints: {
+            /* window >= 450 */
+            450: {
+                spaceBetween: 24,
+            }
         },
     });
 

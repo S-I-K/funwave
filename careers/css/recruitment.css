@@ -1,0 +1,154 @@
+/* variable */
+/* careers: gift common css */
+.section-title-box {
+  margin-bottom: 80px;
+}
+.section-title-box h2.title {
+  font-family: "SUIT Variable", sans-serif;
+  font-weight: 300;
+  font-size: 62px;
+  line-height: 1.3;
+  letter-spacing: -2px;
+  color: #2a2a2a;
+  text-align: center;
+}
+.section-title-box h2.title span.bold {
+  font-weight: 700;
+}
+
+/*  */
+.list-title-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+.list-title-box h3.title {
+  font-family: "SUIT Variable", sans-serif;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 1;
+  letter-spacing: -2px;
+  color: #2a2a2a;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.list-title-box h3.title::after {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 4px;
+  background: #0050A0;
+  rotate: 45deg;
+  position: absolute;
+  left: -48px;
+}
+.list-title-box h3.title::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 4px;
+  background: #0050A0;
+  rotate: 45deg;
+  position: absolute;
+  right: -48px;
+}
+
+#wrap .recruitment-part-content-wrap {
+  padding-top: 200px;
+}
+#wrap .recruitment-part-content-wrap .container .section-title-box {
+  /* common */
+}
+#wrap .recruitment-part-content-wrap .container .recruitment-part-list-area .list-title-box {
+  /* common */
+}
+#wrap .recruitment-part-content-wrap .container .recruitment-part-list-area .list-item-area {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#wrap .recruitment-part-content-wrap .container .recruitment-part-list-area .list-item-area .list-item-box {
+  background: #f4f4f4;
+  padding: 40px 20px;
+  width: calc(33.3333333333% - 24px);
+  height: 464px;
+  border-radius: 18px;
+  margin: 0 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+#wrap .recruitment-part-content-wrap .container .recruitment-part-list-area .list-item-area .list-item-box .item-title-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#wrap .recruitment-part-content-wrap .container .recruitment-part-list-area .list-item-area .list-item-box .item-title-box span.sub-title {
+  font-family: "Archivo", system-ui;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1;
+  color: #0050A0;
+  margin-bottom: 12px;
+}
+#wrap .recruitment-part-content-wrap .container .recruitment-part-list-area .list-item-area .list-item-box .item-title-box span.title {
+  font-family: "SUIT Variable", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -2px;
+  color: #2a2a2a;
+}
+#wrap .recruitment-part-content-wrap .container .recruitment-part-list-area .list-item-area .list-item-box .icon-box {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+#wrap .recruitment-part-content-wrap .container .recruitment-part-list-area .list-item-area .list-item-box .icon-box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#wrap .recruitment-part-content-wrap .container .recruitment-part-list-area .list-item-area .list-item-box .item-content-box ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#wrap .recruitment-part-content-wrap .container .recruitment-part-list-area .list-item-area .list-item-box .item-content-box ul li {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 18px;
+}
+#wrap .recruitment-part-content-wrap .container .recruitment-part-list-area .list-item-area .list-item-box .item-content-box ul li span {
+  font-family: "SUIT Variable", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: -0.8px;
+  color: #2a2a2a;
+}
+#wrap .recruitment-part-content-wrap .container .recruitment-part-list-area .list-item-area .list-item-box .item-content-box ul li::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 4px;
+  border-radius: 300px;
+  background: #cdcdcd;
+  position: absolute;
+  left: 0;
+}
+#wrap .recruitment-part-content-wrap .container .recruitment-part-list-area .list-item-area .list-item-box .item-content-box ul li:not(:last-child) {
+  margin-bottom: 14px;
+}
+#wrap .recruitment-procedure-content-wrap {
+  padding-top: 200px;
+}

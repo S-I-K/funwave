@@ -1,0 +1,181 @@
+/* variable */
+$color-black: #2a2a2a;
+$color-main: #0050A0;
+$color-gray: #ababab;
+$font-kr: 'SUIT Variable', sans-serif;
+$font-en: "Archivo", system-ui;
+
+/* careers: gift common css */
+.section-title-box {
+    margin-bottom: 80px;
+    h2.title {
+        font-family: $font-kr;
+        font-weight: 300;
+        font-size: 62px;
+        line-height: 1.3;
+        letter-spacing: -2px;
+        color: $color-black;
+        text-align: center;
+        span.bold {
+            font-weight: 700;
+        }
+    }
+}
+
+/*  */
+.list-title-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+    h3.title {
+        font-family: $font-kr;
+        font-weight: 700;
+        font-size: 34px;
+        line-height: 1;
+        letter-spacing: -2px;
+        color: $color-black;
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+    h3.title::after {
+        content: '';
+        display: block;
+        width: 24px;
+        height: 4px;
+        background: $color-main;
+        rotate: 45deg;
+        position: absolute;
+        left: - calc(24px + 24px);
+    }
+    h3.title::before {
+        content: '';
+        display: block;
+        width: 24px;
+        height: 4px;
+        background: $color-main;
+        rotate: 45deg;
+        position: absolute;
+        right: - calc(24px + 24px);
+    }
+}
+
+#wrap {
+    .recruitment-part-content-wrap {
+        padding-top: 200px;
+        .container {
+            .section-title-box {
+                /* common */
+            }
+
+            .recruitment-part-list-area {
+                .list-title-box {
+                    /* common */
+                    h3.title {
+                    }
+                    h3.title::after {
+                    }
+                    h3.title::before {
+                    }
+                }
+                
+                .list-item-area {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .list-item-box {
+                        background: #f4f4f4;
+                        padding: 40px 20px;
+                        width: calc(100% / 3 - 24px);
+                        height: 464px;
+                        border-radius: 18px;
+                        margin: 0 12px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: space-between;
+                        .item-title-box {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            span.sub-title {
+                                font-family: $font-en;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 1;
+                                color: $color-main;
+                                margin-bottom: 12px;
+                            }
+                            span.title {
+                                font-family: $font-kr;
+                                font-weight: 700;
+                                font-size: 32px;
+                                line-height: 1;
+                                letter-spacing: -2px;
+                                color: $color-black;
+                            }
+                        }
+
+                        .icon-box {
+                            width: 120px;
+                            height: 120px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            overflow: hidden;
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                        }
+
+                        .item-content-box {
+                            ul {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: flex-start;
+                                li {
+                                    display: flex;
+                                    align-items: center;
+                                    position: relative;
+                                    padding-left: 18px;
+                                    span {
+                                        font-family: $font-kr;
+                                        font-weight: 600;
+                                        font-size: 18px;
+                                        line-height: 1;
+                                        letter-spacing: -.8px;
+                                        color: $color-black;
+                                    }
+                                }
+                                li::before {
+                                    content: '';
+                                    display: block;
+                                    width: 4px;
+                                    height: 4px;
+                                    border-radius: 300px;
+                                    background: #cdcdcd;
+                                    position: absolute;
+                                    left: 0;
+                                }
+                                li:not(:last-child) {
+                                    margin-bottom: 14px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .recruitment-procedure-content-wrap {
+        padding-top: 200px;
+        .container {
+            
+        }
+    }
+}

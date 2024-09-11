@@ -312,10 +312,7 @@
   justify-content: center;
 }
 #wrap .about-content-wrap .container .section-title-box .logo-box img {
-  width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 #wrap .about-content-wrap .container .section-title-box p.para {
   color: #fff;

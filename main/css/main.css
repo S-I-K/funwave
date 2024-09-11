@@ -307,6 +307,9 @@
   width: auto;
   height: 80px;
   margin-bottom: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #wrap .about-content-wrap .container .section-title-box .logo-box img {
   width: 100%;
@@ -820,8 +823,6 @@
   #wrap .about-content-wrap .container .about-list-area .about-list-box {
     width: 100%;
     margin: 0;
-    -webkit-clip-path: inset(0 40px 0 40px);
-            clip-path: inset(0 40px 0 40px);
   }
   #wrap .about-content-wrap .container .about-list-area .about-list-box span.list-sub-title {
     font-size: 14px;

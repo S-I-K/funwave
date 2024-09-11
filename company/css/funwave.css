@@ -19,6 +19,7 @@
 #wrap .business-about-content-wrap {
   padding-top: 200px;
   padding-bottom: 200px;
+  overflow: hidden;
 }
 #wrap .business-about-content-wrap .container {
   display: flex;
@@ -153,6 +154,8 @@
   letter-spacing: -0.8px;
   color: #2a2a2a;
   text-align: center;
+  white-space: pre-line;
+  word-break: keep-all;
 }
 #wrap .business-about-content-wrap .container .para-box p:not(:last-child) {
   margin-bottom: 42px;
@@ -183,7 +186,7 @@
   font-family: "Archivo", system-ui;
   font-weight: 600;
   font-size: 48px;
-  height: 1;
+  line-height: 1;
   letter-spacing: -1px;
   color: #0050A0;
 }
@@ -219,6 +222,8 @@
   line-height: 1;
   letter-spacing: -0.8px;
   color: #2a2a2a;
+  word-break: keep-all;
+  white-space: pre-line;
 }
 #wrap .brand-values-content-wrap .container .values-list-area .value-item-box:not(:last-child) {
   margin-bottom: 34px;
@@ -290,6 +295,7 @@
 #wrap .brand-character-content-wrap .container .content-list-area .item-box {
   position: relative;
   width: calc(33.3333333333% - 24px);
+  height: 550px;
   margin: 0 12px;
   display: flex;
   align-items: center;
@@ -387,4 +393,259 @@
   line-height: 1;
   letter-spacing: -0.8px;
   color: #2a2a2a;
+}
+
+@media (max-width: 1024px) {
+  /* company: funwave common css */
+  .section-title-box h2.title {
+    font-size: 42px;
+  }
+  #wrap .business-about-content-wrap .container .business-list-box .business-item-box {
+    width: calc(16.6666666667% - 16px);
+    height: 340px;
+    margin: 0 8px;
+  }
+  #wrap .business-about-content-wrap .container .business-list-box .business-item-box .title-box .icon-box {
+    width: 52px;
+    height: 52px;
+  }
+  #wrap .business-about-content-wrap .container .business-list-box .business-item-box .title-box span.title {
+    font-size: 24px;
+    height: 48px;
+  }
+  #wrap .business-about-content-wrap .container .business-list-box .business-item-box:nth-child(1)::after {
+    width: 60px;
+    height: 60px;
+    left: -30px;
+    top: -30px;
+  }
+  #wrap .business-about-content-wrap .container .business-list-box .business-item-box:nth-child(6)::after {
+    width: 60px;
+    height: 60px;
+    right: -30px;
+    bottom: -30px;
+  }
+  #wrap .business-about-content-wrap .container .para-box p.title-para {
+    font-size: 28px;
+  }
+  #wrap .business-about-content-wrap .container .para-box p {
+    font-size: 16px;
+  }
+  #wrap .business-about-content-wrap .container .para-box p:not(:last-child) {
+    margin-bottom: 24px;
+  }
+  #wrap .brand-values-content-wrap .container .section-title-box {
+    /* commons css */
+  }
+  #wrap .brand-values-content-wrap .container .values-list-area .value-item-box .title-box {
+    width: 130px;
+  }
+  #wrap .brand-values-content-wrap .container .values-list-area .value-item-box .title-box span.title {
+    font-size: 34px;
+  }
+  #wrap .brand-values-content-wrap .container .values-list-area .value-item-box .content-box {
+    width: calc(100% - 130px + 24px);
+  }
+  #wrap .brand-values-content-wrap::after {
+    width: 60px;
+    height: 60px;
+    top: -30px;
+  }
+  #wrap .brand-values-content-wrap::before {
+    width: 60px;
+    height: 60px;
+    bottom: -30px;
+  }
+  #wrap .brand-character-content-wrap .container .section-title-box {
+    /* common css */
+  }
+  #wrap .brand-character-content-wrap .container .content-list-area .text-box {
+    padding: 28px 0;
+  }
+  #wrap .brand-character-content-wrap .container .content-list-area .text-box span.sub-title {
+    font-size: 18px;
+    margin-bottom: 14px;
+    letter-spacing: 0;
+  }
+  #wrap .brand-character-content-wrap .container .content-list-area .text-box span.title {
+    font-size: 34px;
+  }
+  #wrap .location-content-wrap .container .section-title-box {
+    /* common css */
+  }
+  #wrap .location-content-wrap .container .map-list-area .map-item-box .text-box span.location-name {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+  #wrap .location-content-wrap .container .map-list-area .map-item-box .text-box span.location-desc {
+    font-size: 14px;
+  }
+}
+@media (max-width: 450px) {
+  /* company: funwave common css */
+  .section-title-box {
+    margin-bottom: 60px;
+  }
+  .section-title-box h2.title {
+    font-size: 24px;
+    letter-spacing: -1.2px;
+  }
+  #wrap .business-about-content-wrap {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  #wrap .business-about-content-wrap .container .business-list-box {
+    flex-wrap: wrap;
+    margin-bottom: 42px;
+  }
+  #wrap .business-about-content-wrap .container .business-list-box .business-item-box {
+    width: calc(50% - 8px);
+    margin: 8px 4px;
+    height: 260px;
+  }
+  #wrap .business-about-content-wrap .container .business-list-box .business-item-box .title-box {
+    width: auto;
+  }
+  #wrap .business-about-content-wrap .container .business-list-box .business-item-box .title-box span.title {
+    font-size: 18px;
+    letter-spacing: 0px;
+  }
+  #wrap .business-about-content-wrap .container .business-list-box .business-item-box:nth-child(1)::after {
+    display: none;
+  }
+  #wrap .business-about-content-wrap .container .business-list-box .business-item-box:nth-child(6)::after {
+    display: none;
+  }
+  #wrap .business-about-content-wrap .container .para-box p.title-para {
+    font-size: 18px;
+    letter-spacing: -0.8px;
+  }
+  #wrap .business-about-content-wrap .container .para-box p {
+    white-space: unset;
+    font-size: 14px;
+  }
+  #wrap .business-about-content-wrap .container .para-box p:not(:last-child) {
+    margin-bottom: 18px;
+  }
+  #wrap .brand-values-content-wrap {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  #wrap .brand-values-content-wrap .container .section-title-box {
+    /* commons css */
+  }
+  #wrap .brand-values-content-wrap .container .values-list-area .value-item-box {
+    background: #fff;
+    padding: 18px 24px;
+    align-items: flex-start;
+  }
+  #wrap .brand-values-content-wrap .container .values-list-area .value-item-box .title-box {
+    width: auto;
+    min-width: 124px;
+    margin: 0;
+  }
+  #wrap .brand-values-content-wrap .container .values-list-area .value-item-box .title-box span.title {
+    font-size: 18px;
+    letter-spacing: 0px;
+  }
+  #wrap .brand-values-content-wrap .container .values-list-area .value-item-box .content-box {
+    width: calc(100% - 124px);
+    border-left: 1px solid #ebebeb;
+    padding-left: 12px;
+  }
+  #wrap .brand-values-content-wrap .container .values-list-area .value-item-box .content-box .text-box {
+    background: transparent;
+    border: none;
+    padding: 0;
+    align-items: flex-start;
+  }
+  #wrap .brand-values-content-wrap .container .values-list-area .value-item-box .content-box .text-box span.content {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  #wrap .brand-values-content-wrap .container .values-list-area .value-item-box .content-box .text-box span.sub-content {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  #wrap .brand-values-content-wrap .container .values-list-area .value-item-box.strategy .content-box {
+    flex-direction: column;
+  }
+  #wrap .brand-values-content-wrap .container .values-list-area .value-item-box.strategy .content-box .text-box {
+    width: 100%;
+  }
+  #wrap .brand-values-content-wrap .container .values-list-area .value-item-box.strategy .content-box .text-box span.init {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 14px;
+    color: #2a2a2a;
+  }
+  #wrap .brand-values-content-wrap .container .values-list-area .value-item-box.strategy .content-box .text-box span.content {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 6px;
+  }
+  #wrap .brand-values-content-wrap .container .values-list-area .value-item-box.strategy .content-box .text-box span.sub-content {
+    font-size: 14px;
+    font-weight: 300;
+    white-space: unset;
+  }
+  #wrap .brand-values-content-wrap .container .values-list-area .value-item-box.strategy .content-box .text-box:not(:last-child) {
+    margin-bottom: 34px;
+  }
+  #wrap .brand-values-content-wrap::after {
+    width: 30px;
+    height: 30px;
+    top: -15px;
+  }
+  #wrap .brand-values-content-wrap::before {
+    width: 30px;
+    height: 30px;
+    bottom: -15px;
+  }
+  #wrap .brand-character-content-wrap {
+    padding-top: 120px;
+  }
+  #wrap .brand-character-content-wrap .container .section-title-box {
+    /* common css */
+  }
+  #wrap .brand-character-content-wrap .container .content-list-area {
+    flex-direction: column;
+  }
+  #wrap .brand-character-content-wrap .container .content-list-area .item-box {
+    width: 100%;
+    height: 280px;
+    margin: 0;
+  }
+  #wrap .brand-character-content-wrap .container .content-list-area .item-box:not(:last-child) {
+    margin-bottom: 18px;
+  }
+  #wrap .brand-character-content-wrap .container .content-list-area .text-box {
+    padding: 24px 0;
+  }
+  #wrap .brand-character-content-wrap .container .content-list-area .text-box span.sub-title {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  #wrap .brand-character-content-wrap .container .content-list-area .text-box span.title {
+    font-size: 24px;
+  }
+  #wrap .location-content-wrap {
+    padding-top: 120px;
+  }
+  #wrap .location-content-wrap .container .section-title-box {
+    /* common css */
+  }
+  #wrap .location-content-wrap .container .map-list-area {
+    flex-direction: column;
+  }
+  #wrap .location-content-wrap .container .map-list-area .map-item-box {
+    width: 100%;
+  }
+  #wrap .location-content-wrap .container .map-list-area .map-item-box .map-box {
+    height: 240px;
+    margin-bottom: 24px;
+  }
+  #wrap .location-content-wrap .container .map-list-area .map-item-box:not(:last-child) {
+    margin-bottom: 42px;
+  }
 }

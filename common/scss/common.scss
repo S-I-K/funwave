@@ -102,6 +102,7 @@ section {
                 letter-spacing: -4px;
                 color: #fff;
                 margin-bottom: 18px;
+                text-align: center;
             }
             span.comment {
                 font-family: $font-kr;
@@ -297,8 +298,13 @@ section {
         .container {
             .title-box {
                 h2.title {
+                    font-size: 54px;
+                    letter-spacing: -2px;
+                    margin-bottom: 14px;
                 }
                 span.comment {
+                    font-size: 16px;
+                    font-weight: 400;
                 }
             }
         }
@@ -368,11 +374,15 @@ section {
     }
     /* sub page visual section background css */
     .subpage-visual-content-wrap {
+        height: 320px;
         .container {
             .title-box {
                 h2.title {
+                    font-size: 38px;
+                    letter-spacing: 0px;
                 }
                 span.comment {
+                    font-size: 14px;
                 }
             }
         }
@@ -387,29 +397,43 @@ section {
     }
     .page-nav-content-wrap {
         .container {
+            padding: 0;
             .btn-list-area {
                 .home-icon-box {
+                    width: 56px;
+                    height: 56px;
+                    padding: 18px;
                     img {
                     }
                 }
                 .category-btn-box {
+                    width: calc(50% - 28px);
+                    height: auto;
+                    padding: 22px 28px;
                     a {
                         span.name {
+                            font-size: 12px;
                         }
                         span.name.font-kr {
                         }
                         .hamburger-icon-box {
                             span {
+                                width: 10px;
                             }
                             span:not(:last-child) {
+                                margin-bottom: 3px;
                             }
                         }
                     }
                     .drop-down-box {
+                        top: 56px;
                         ul {
                             li {
                                 a {
+                                    height: auto;
+                                    padding: 22px 28px;
                                     span {
+                                        font-size: 12px;
                                     }
                                     span.font-kr {
                                     }

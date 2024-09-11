@@ -252,3 +252,265 @@ $font-en: "Archivo", system-ui;
     }
 
 }
+
+@media ( max-width: 1024px ) {
+    #wrap {
+        .subpage-visual-content-wrap.company {
+            .container {
+                .title-box {
+                    h2.title {
+                    }
+                    span.comment {
+                    }
+                }
+            }
+        }
+        .page-nav-content-wrap {
+            .container {
+                .btn-list-area {
+                    .home-icon-box {
+                        img {
+                        }
+                    }
+                    a.category-btn-box {
+                        span.name {
+                        }
+                        span.name.font-kr {
+                        }
+                        .hamburger-icon-box {
+                            span {
+                            }
+                            span:not(:last-child) {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
+        .history-content-wrap {
+            .container {
+                .section-title-box {
+                    h2.title {
+                    }
+                }
+                .section-title-box::after {
+                }
+    
+                .history-text-area {
+                    .text-box {
+                        .circle {
+                            span {
+                            }
+                        }
+                        .circle::after {
+                        }
+                        .year-box {
+                            span {
+                            }
+                        }
+                        .year-list-box {
+                            ul {
+                                li {
+                                    span {
+                                    }
+                                    span.bold {
+                                    }
+                                }
+                                li:not(:last-child) {
+                                }
+                                li::after {
+                                }
+                            }
+                        }
+                    }
+                }
+                .history-text-area.right {
+                    .text-box {
+                        .circle {
+                        }
+                        .circle::after {
+                        }
+                        .year-box {
+                        }
+                        .year-list-box {
+                            ul {
+                            }
+                        }
+                    }
+                }
+                .history-text-area.left {
+                    .text-box {
+                        .circle {
+                        }
+                        .circle::after {
+                        }
+                        .year-box {
+                        }
+                        .year-list-box {
+                            ul {
+                            }
+                        }
+                    }
+                }
+                .history-text-area.center {
+                    .text-box {
+                        .circle {
+                        }
+                        .circle::after {
+                        }
+                        .year-box {
+                        }
+                        .year-list-box {
+                            ul {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
+        .licence-content-wrap {
+            .container {
+                .licence-list-box {
+                    .licence-img-box {
+                        img {
+                        }
+                    }
+                }
+            }
+        }
+    
+    }
+}
+
+@media ( max-width: 450px ) {
+    #wrap {
+        .subpage-visual-content-wrap.company {
+            .container {
+                .title-box {
+                    h2.title {
+                    }
+                    span.comment {
+                    }
+                }
+            }
+        }
+        .page-nav-content-wrap {
+            .container {
+                .btn-list-area {
+                    .home-icon-box {
+                        img {
+                        }
+                    }
+                    a.category-btn-box {
+                        span.name {
+                        }
+                        span.name.font-kr {
+                        }
+                        .hamburger-icon-box {
+                            span {
+                            }
+                            span:not(:last-child) {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
+        .history-content-wrap {
+            .container {
+                .section-title-box {
+                    h2.title {
+                    }
+                }
+                .section-title-box::after {
+                }
+    
+                .history-text-area {
+                    .text-box {
+                        .circle {
+                            span {
+                            }
+                        }
+                        .circle::after {
+                        }
+                        .year-box {
+                            span {
+                            }
+                        }
+                        .year-list-box {
+                            ul {
+                                li {
+                                    span {
+                                    }
+                                    span.bold {
+                                    }
+                                }
+                                li:not(:last-child) {
+                                }
+                                li::after {
+                                }
+                            }
+                        }
+                    }
+                }
+                .history-text-area.right {
+                    .text-box {
+                        .circle {
+                        }
+                        .circle::after {
+                        }
+                        .year-box {
+                        }
+                        .year-list-box {
+                            ul {
+                            }
+                        }
+                    }
+                }
+                .history-text-area.left {
+                    .text-box {
+                        .circle {
+                        }
+                        .circle::after {
+                        }
+                        .year-box {
+                        }
+                        .year-list-box {
+                            ul {
+                            }
+                        }
+                    }
+                }
+                .history-text-area.center {
+                    .text-box {
+                        .circle {
+                        }
+                        .circle::after {
+                        }
+                        .year-box {
+                        }
+                        .year-list-box {
+                            ul {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
+        .licence-content-wrap {
+            .container {
+                .licence-list-box {
+                    .licence-img-box {
+                        img {
+                        }
+                    }
+                }
+            }
+        }
+    
+    }
+}

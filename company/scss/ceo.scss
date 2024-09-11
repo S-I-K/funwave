@@ -114,3 +114,166 @@ $font-en: "Archivo", system-ui;
         }
     }
 }
+
+@media ( max-width: 1024px ) {
+    #wrap {
+        .subpage-visual-content-wrap.company {
+            .container {
+                .title-box {
+                    h2.title {
+                    }
+                    span.comment {
+                    }
+                }
+            }
+        }
+        .page-nav-content-wrap {
+            .container {
+                .btn-list-area {
+                    .home-icon-box {
+                        img {
+                        }
+                    }
+                    a.category-btn-box {
+                        span.name {
+                        }
+                        span.name.font-kr {
+                        }
+                        .hamburger-icon-box {
+                            span {
+                            }
+                            span:not(:last-child) {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
+        .ceo-about-content-wrap {
+            .container {
+                justify-content: space-between;
+                .ceo-img-box {
+                    width: calc(50% - 12px);
+                    margin: 0;
+                    img {
+                    }
+                }
+    
+                .about-text-box {
+                    width: calc(50% - 12px);
+                    .title-box {
+                        margin-bottom: 42px;
+                        h2.title {
+                            font-size: 32px;
+                            span.color {
+                            }
+                        }
+                    }
+    
+                    .para-box {
+                        margin-bottom: 48px;
+                        p {
+                            font-size: 16px;
+                        }
+                        p:not(:last-child) {
+                            margin-bottom: 24px;
+                        }
+                    }
+    
+                    .ceo-name-box {
+                        span {
+                            font-size: 14px;
+                            font-weight: 600;
+                        }
+                        span.rank {
+                        }
+                        span.name {
+    
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media ( max-width: 450px ) {
+    #wrap {
+        .subpage-visual-content-wrap.company {
+            .container {
+                .title-box {
+                    h2.title {
+                    }
+                    span.comment {
+                    }
+                }
+            }
+        }
+        .page-nav-content-wrap {
+            .container {
+                .btn-list-area {
+                    .home-icon-box {
+                        img {
+                        }
+                    }
+                    a.category-btn-box {
+                        span.name {
+                        }
+                        span.name.font-kr {
+                        }
+                        .hamburger-icon-box {
+                            span {
+                            }
+                            span:not(:last-child) {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
+        .ceo-about-content-wrap {
+            padding-top: 120px;
+            .container {
+                align-items: flex-start;
+                .ceo-img-box {
+                    height: auto;
+                    img {
+                    }
+                }
+    
+                .about-text-box {
+                    .title-box {
+                        margin-bottom: 24px;
+                        h2.title {
+                            font-size: 18px;
+                            letter-spacing: -.8px;
+                            word-break: keep-all;
+                            span.color {
+                            }
+                        }
+                    }
+    
+                    .para-box {
+                        p {
+                            font-size: 14px;
+                        }
+                        p:not(:last-child) {
+                            margin-bottom: 16px;
+                        }
+                    }
+    
+                    .ceo-name-box {
+                        span {
+                        }
+                        span.rank {
+                        }
+                        span.name {
+    
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

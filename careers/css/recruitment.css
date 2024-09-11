@@ -57,6 +57,7 @@
 
 #wrap .recruitment-part-content-wrap {
   padding-top: 200px;
+  padding-bottom: 200px;
 }
 #wrap .recruitment-part-content-wrap .container .section-title-box {
   /* common */
@@ -130,7 +131,7 @@
 }
 #wrap .recruitment-part-content-wrap .container .recruitment-part-list-area .list-item-area .list-item-box .item-content-box ul li span {
   font-family: "SUIT Variable", sans-serif;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 18px;
   line-height: 1;
   letter-spacing: -0.8px;
@@ -150,5 +151,187 @@
   margin-bottom: 14px;
 }
 #wrap .recruitment-procedure-content-wrap {
+  padding: 80px 0;
+  background: #F4F4F4;
+}
+#wrap .recruitment-procedure-content-wrap .container .recruitment-procedure-list-area .list-title-box {
+  /* common */
+}
+#wrap .recruitment-procedure-content-wrap .container .recruitment-procedure-list-area .list-item-area {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+#wrap .recruitment-procedure-content-wrap .container .recruitment-procedure-list-area .list-item-area .list-item-box {
+  background: #fff;
+  width: calc(25% - 24px);
+  height: 300px;
+  margin: 0 12px;
+  border-radius: 18px;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+#wrap .recruitment-procedure-content-wrap .container .recruitment-procedure-list-area .list-item-area .list-item-box .item-text-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#wrap .recruitment-procedure-content-wrap .container .recruitment-procedure-list-area .list-item-area .list-item-box .item-text-box span.num {
+  font-family: "Archivo", system-ui;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1;
+  color: #0050A0;
+  margin-bottom: 12px;
+}
+#wrap .recruitment-procedure-content-wrap .container .recruitment-procedure-list-area .list-item-area .list-item-box .item-text-box span.title {
+  font-family: "SUIT Variable", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -2px;
+  color: #2a2a2a;
+  margin-bottom: 32px;
+}
+#wrap .recruitment-procedure-content-wrap .container .recruitment-procedure-list-area .list-item-area .list-item-box .item-text-box p {
+  font-family: "SUIT Variable", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: -0.8px;
+  color: #2a2a2a;
+  white-space: pre-line;
+  word-break: keep-all;
+  text-align: center;
+  min-height: 82px;
+}
+#wrap .recruitment-procedure-content-wrap .container .recruitment-procedure-list-area .list-item-area .list-item-box.color {
+  background: #0050A0;
+}
+#wrap .recruitment-procedure-content-wrap .container .recruitment-procedure-list-area .list-item-area .list-item-box.color .item-text-box span.num {
+  color: #fff;
+}
+#wrap .recruitment-procedure-content-wrap .container .recruitment-procedure-list-area .list-item-area .list-item-box.color .item-text-box span.title {
+  color: #fff;
+}
+#wrap .recruitment-procedure-content-wrap .container .recruitment-procedure-list-area .list-item-area .list-item-box.color .item-text-box p {
+  color: #fff;
+}
+#wrap .recruitment-procedure-content-wrap .container .recruitment-procedure-list-area .list-item-area .list-item-box:not(:last-child)::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  border-radius: 0px 6px;
+  rotate: 45deg;
+  position: absolute;
+  right: -15px;
+  z-index: 2;
+}
+#wrap .recruitment-procedure-content-wrap .container .recruitment-procedure-list-area .list-item-area .list-item-box:not(:first-child)::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: #F4F4F4;
+  border-radius: 0px 6px;
+  rotate: 45deg;
+  position: absolute;
+  left: -15px;
+}
+#wrap .contact-content-wrap {
   padding-top: 200px;
+}
+#wrap .contact-content-wrap .container {
+  height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#wrap .contact-content-wrap .container .logo-area {
+  width: 50%;
+  height: 100%;
+  background: #f4f4f4;
+}
+#wrap .contact-content-wrap .container .logo-area .logo-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#wrap .contact-content-wrap .container .logo-area .logo-box img {
+  width: auto;
+  height: 80px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#wrap .contact-content-wrap .container .text-area {
+  width: 50%;
+  height: 100%;
+  border: 2px solid #f4f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#wrap .contact-content-wrap .container .text-area .text-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#wrap .contact-content-wrap .container .text-area .text-box p {
+  font-family: "SUIT Variable", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: -0.8px;
+  color: #2a2a2a;
+  margin-bottom: 32px;
+  white-space: pre-line;
+  word-break: keep-all;
+  text-align: center;
+}
+#wrap .contact-content-wrap .container .text-area .text-box p span.bold {
+  font-weight: 700;
+}
+#wrap .contact-content-wrap .container .text-area .text-box a.contact-btn {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+#wrap .contact-content-wrap .container .text-area .text-box a.contact-btn span {
+  font-family: "Archivo", system-ui;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1;
+  color: #0050A0;
+  opacity: 0.8;
+  transition: opacity 0.4s ease;
+}
+#wrap .contact-content-wrap .container .text-area .text-box a.contact-btn.email {
+  margin-bottom: 16px;
+}
+#wrap .contact-content-wrap .container .text-area .text-box a.contact-btn::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 2px;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  background: #0050A0;
+  transition: width 0.4s ease;
+}
+#wrap .contact-content-wrap .container .text-area .text-box a.contact-btn:hover::after {
+  width: 100%;
+}
+#wrap .contact-content-wrap .container .text-area .text-box a.contact-btn:hover span {
+  opacity: 1;
 }

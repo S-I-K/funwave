@@ -22,7 +22,6 @@ $font-en: "Archivo", system-ui;
     }
 }
 
-
 #wrap {
     .gift-content-wrap {
         padding-top: 200px;
@@ -81,6 +80,7 @@ $font-en: "Archivo", system-ui;
                             line-height: 1.5;
                             letter-spacing: -.8px;
                             color: $color-black;
+                            word-break: keep-all;
                         }
                     }
                 }
@@ -88,7 +88,7 @@ $font-en: "Archivo", system-ui;
                     content: '';
                     display: block;
                     width: 100%;
-                    height: 80%;
+                    height: 90%;
                     opacity: 0;
                     background: #f5f5f5;
                     position: absolute;
@@ -110,6 +110,116 @@ $font-en: "Archivo", system-ui;
                 }
                 .list-box:nth-child(6) {
                     border-top: none;
+                }
+            }
+        }
+    }
+}
+
+@media ( max-width: 1024px ) {
+    /* careers: gift common css */
+    .section-title-box {
+        h2.title {
+            font-size: 42px;
+            span.bold {
+            }
+        }
+    }
+
+    #wrap {
+        .gift-content-wrap {
+            .container {
+                .section-title-box {
+                    /* commons */
+                }
+
+                .gift-list-area {
+                    .list-box {
+                        .icon-box {
+                            width: 32px;
+                            height: 32px;
+                            img {
+                            }
+                        }
+                        .text-box {
+                            span.title {
+                                font-size: 24px;
+                                letter-spacing: -1.2px;
+                            }
+                            span.desc {
+                                font-size: 14px;
+                                word-break: keep-all;
+                                display: block;
+                                min-height: 42px;
+                            }
+                        }
+                    }
+                    .list-box::before {
+                    }
+                    .list-box:hover::before {
+                    }
+                    .list-box:nth-child(4) {
+                    }
+                    .list-box:nth-child(5) {
+                    }
+                    .list-box:nth-child(6) {
+                    }
+                }
+            }
+        }
+    }
+}
+@media ( max-width: 450px ) {
+    /* careers: gift common css */
+    .section-title-box {
+        margin-bottom: 60px;
+        h2.title {
+            font-size: 24px;
+            span.bold {
+            }
+        }
+    }
+
+    #wrap {
+        .gift-content-wrap {
+            padding-top: 120px;
+            .container {
+                .section-title-box {
+                    /* commons */
+                }
+
+                .gift-list-area {
+                    .list-box {
+                        width: calc(100% / 2 - 8px);
+                        margin: 0 4px;
+                        padding: 30px 18px;
+                        .icon-box {
+                            img {
+                            }
+                        }
+                        .text-box {
+                            span.title {
+                                font-size: 18px;
+                            }
+                            span.desc {
+
+                                min-height: 106px;
+                            }
+                        }
+                    }
+                    .list-box::before {
+                    }
+                    .list-box:hover::before {
+                    }
+                    .list-box:nth-child(3) {
+                        border-top: none;
+                    }
+                    .list-box:nth-child(4) {
+                    }
+                    .list-box:nth-child(5) {
+                    }
+                    .list-box:nth-child(6) {
+                    }
                 }
             }
         }

@@ -180,23 +180,40 @@ section {
   font-weight: 500;
 }
 .page-nav-content-wrap .container .btn-list-area .category-btn-box a .hamburger-icon-box {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 14px;
+  height: 14px;
 }
 .page-nav-content-wrap .container .btn-list-area .category-btn-box a .hamburger-icon-box span {
-  width: 14px;
+  width: 100%;
   height: 1px;
   display: block;
   background: #2a2a2a;
+  position: absolute;
+  transition: all 0.4s ease;
 }
-.page-nav-content-wrap .container .btn-list-area .category-btn-box a .hamburger-icon-box span:not(:last-child) {
-  margin-bottom: 4px;
+.page-nav-content-wrap .container .btn-list-area .category-btn-box a .hamburger-icon-box span:nth-child(1) {
+  top: 4px;
+}
+.page-nav-content-wrap .container .btn-list-area .category-btn-box a .hamburger-icon-box span:nth-child(2) {
+  bottom: 4px;
+}
+.page-nav-content-wrap .container .btn-list-area .category-btn-box a .hamburger-icon-box.active span:nth-child(1) {
+  top: auto;
+  rotate: 45deg;
+}
+.page-nav-content-wrap .container .btn-list-area .category-btn-box a .hamburger-icon-box.active span:nth-child(2) {
+  bottom: auto;
+  rotate: -45deg;
 }
 .page-nav-content-wrap .container .btn-list-area .category-btn-box .drop-down-box {
   border: 1px solid #d6d6d6;
   position: absolute;
+  z-index: 10;
   top: 60px;
   left: -1px;
   width: calc(100% + 2px);
@@ -325,11 +342,15 @@ section {
   .page-nav-content-wrap .container .btn-list-area .category-btn-box a span.name {
     font-size: 12px;
   }
-  .page-nav-content-wrap .container .btn-list-area .category-btn-box a .hamburger-icon-box span {
-    width: 10px;
+  .page-nav-content-wrap .container .btn-list-area .category-btn-box a .hamburger-icon-box {
+    width: 12px;
+    height: 12px;
   }
-  .page-nav-content-wrap .container .btn-list-area .category-btn-box a .hamburger-icon-box span:not(:last-child) {
-    margin-bottom: 3px;
+  .page-nav-content-wrap .container .btn-list-area .category-btn-box a .hamburger-icon-box span:nth-child(1) {
+    top: 3px;
+  }
+  .page-nav-content-wrap .container .btn-list-area .category-btn-box a .hamburger-icon-box span:nth-child(2) {
+    bottom: 3px;
   }
   .page-nav-content-wrap .container .btn-list-area .category-btn-box .drop-down-box {
     top: 56px;

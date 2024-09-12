@@ -178,24 +178,46 @@ section {
                     .hamburger-icon-box {
                         // width: 60px;
                         // height: 60px;
+                        position: relative;
                         display: flex;
                         flex-direction: column;
                         align-items: center;
                         justify-content: center;
+                        width: 14px;
+                        height: 14px;
                         span {
-                            width: 14px;
+                            width: 100%;
                             height: 1px;
                             display: block;
                             background: $color-black;
+                            position: absolute;
+                            transition: all .4s ease;
+                        }
+                        span:nth-child(1) {
+                            top: 4px;
+                        }
+                        span:nth-child(2) {
+                            bottom: 4px;
                         }
                         span:not(:last-child) {
-                            margin-bottom: 4px;
+                            // margin-bottom: 4px;
+                        }
+                    }
+                    .hamburger-icon-box.active {
+                        span:nth-child(1) {
+                            top: auto;
+                            rotate: 45deg;
+                        }
+                        span:nth-child(2) {
+                            bottom: auto;
+                            rotate: -45deg;
                         }
                     }
                 }
                 .drop-down-box {
                     border: 1px solid #d6d6d6;
                     position: absolute;
+                    z-index: 10;
                     top: 60px;
                     left: -1px;
                     width: calc(100% + 2px);
@@ -417,11 +439,17 @@ section {
                         span.name.font-kr {
                         }
                         .hamburger-icon-box {
+                            width: 12px;
+                            height: 12px;
                             span {
-                                width: 10px;
                             }
                             span:not(:last-child) {
-                                margin-bottom: 3px;
+                            }
+                            span:nth-child(1) {
+                                top: 3px;
+                            }
+                            span:nth-child(2) {
+                                bottom: 3px;
                             }
                         }
                     }

@@ -198,8 +198,10 @@ $(()=>{
     page_nav_drop_btn.click(function(e){
         if(!$(this).hasClass('active')){
             $(this).addClass('active');
+            $(this).find($('.hamburger-icon-box')).addClass('active');
         }else{
             $(this).removeClass('active');
+            $(this).find($('.hamburger-icon-box')).removeClass('active');
         }
     });
     $('.category-btn-box > a').click((e)=>{

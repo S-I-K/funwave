@@ -11,6 +11,7 @@
   letter-spacing: -2px;
   color: #2a2a2a;
   text-align: center;
+  word-break: keep-all;
 }
 .section-title-box h2.title span.bold {
   font-weight: 700;

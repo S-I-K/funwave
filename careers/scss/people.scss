@@ -16,6 +16,7 @@ $font-en: "Archivo", system-ui;
         letter-spacing: -2px;
         color: $color-black;
         text-align: center;
+        word-break: keep-all;
         span.bold {
             font-weight: 700;
         }

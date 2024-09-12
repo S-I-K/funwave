@@ -132,16 +132,17 @@ $font-en: "Archivo", system-ui;
                                     font-family: $font-kr;
                                     font-weight: 500;
                                     font-size: 18px;
-                                    line-height: 1;
+                                    line-height: 1.5;
                                     letter-spacing: -.8px;
                                     color: $color-black;
+                                    word-break: keep-all;
                                 }
                                 span.bold {
                                     font-weight: 700;
                                 }
                             }
                             li:not(:last-child) {
-                                margin-bottom: 24px;
+                                margin-bottom: 18px;
                             }
                             li::after {
                                 content: '';
@@ -292,32 +293,45 @@ $font-en: "Archivo", system-ui;
             .container {
                 .section-title-box {
                     h2.title {
+                        font-size: 42px;
                     }
                 }
                 .section-title-box::after {
+                    height: 2px;
                 }
     
                 .history-text-area {
                     .text-box {
+                        padding-bottom: 90px;
                         .circle {
+                            width: 24px;
+                            height: 24px;
+                            
                             span {
+                                width: 8px;
+                                height: 8px;
                             }
                         }
                         .circle::after {
+                            width: 73px;
+                            height: 1px;
                         }
                         .year-box {
                             span {
+                                font-size: 34px;
                             }
                         }
                         .year-list-box {
                             ul {
                                 li {
                                     span {
+                                        font-size: 16px;
                                     }
                                     span.bold {
                                     }
                                 }
                                 li:not(:last-child) {
+                                    margin-bottom: 18px;
                                 }
                                 li::after {
                                 }
@@ -327,9 +341,13 @@ $font-en: "Archivo", system-ui;
                 }
                 .history-text-area.right {
                     .text-box {
+                        padding-left: 90px;
                         .circle {
+                            top: -14px;
+                            left: -14px;
                         }
                         .circle::after {
+                            left: calc(24px + 4px);
                         }
                         .year-box {
                         }
@@ -341,9 +359,13 @@ $font-en: "Archivo", system-ui;
                 }
                 .history-text-area.left {
                     .text-box {
+                        padding-right: 90px;
                         .circle {
+                            top: -14px;
+                            right: -14px;
                         }
                         .circle::after {
+                            right: calc(24px + 4px);
                         }
                         .year-box {
                         }
@@ -374,6 +396,7 @@ $font-en: "Archivo", system-ui;
             .container {
                 .licence-list-box {
                     .licence-img-box {
+                        height: 190px;
                         img {
                         }
                     }
@@ -420,30 +443,52 @@ $font-en: "Archivo", system-ui;
         }
     
         .history-content-wrap {
+            padding-top: 120px;
             .container {
                 .section-title-box {
+                    padding-bottom: 0px;
+                    margin-bottom: 80px;
                     h2.title {
+                        font-size: 24px;
                     }
                 }
                 .section-title-box::after {
+                    width: 28px;
+                    display: none;
                 }
     
                 .history-text-area {
                     .text-box {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
                         .circle {
+                            width: 18px;
+                            height: 18px;
+                            position: relative;
+                            margin-bottom: 36px;
                             span {
+                                width: 6px;
+                                height: 6px;
                             }
                         }
                         .circle::after {
+                            width: 8px;
+                            bottom: -19px;
                         }
                         .year-box {
                             span {
+                                border: none;
+                                font-size: 24px;
                             }
                         }
                         .year-list-box {
                             ul {
                                 li {
                                     span {
+                                        font-size: 14px;
                                     }
                                     span.bold {
                                     }
@@ -458,28 +503,40 @@ $font-en: "Archivo", system-ui;
                 }
                 .history-text-area.right {
                     .text-box {
+                        padding-left: 0;
+                        border: none;
                         .circle {
+                            top: auto;
+                            left: auto;
                         }
                         .circle::after {
+                            left: auto;
                         }
                         .year-box {
                         }
                         .year-list-box {
                             ul {
+                                align-items: center;
                             }
                         }
                     }
                 }
                 .history-text-area.left {
                     .text-box {
+                        padding-right: 0;
+                        border: none;
                         .circle {
+                            top: auto;
+                            right: auto;
                         }
                         .circle::after {
+                            right: auto;
                         }
                         .year-box {
                         }
                         .year-list-box {
                             ul {
+                                align-items: center;
                             }
                         }
                     }
@@ -487,13 +544,16 @@ $font-en: "Archivo", system-ui;
                 .history-text-area.center {
                     .text-box {
                         .circle {
+                            display: flex;
                         }
                         .circle::after {
+                            display: block;
                         }
                         .year-box {
                         }
                         .year-list-box {
                             ul {
+                                align-items: center;
                             }
                         }
                     }
@@ -504,7 +564,10 @@ $font-en: "Archivo", system-ui;
         .licence-content-wrap {
             .container {
                 .licence-list-box {
+                    flex-wrap: wrap;
                     .licence-img-box {
+                        width: calc(100% / 3 - 8px);
+                        margin: 8px 4px;
                         img {
                         }
                     }

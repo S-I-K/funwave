@@ -83,14 +83,14 @@ $font-en: "Archivo", system-ui;
                     > a {
                         margin-bottom: 24px;
                         width: 100%;
-                        height: 320px;
+                        height: auto;
                         display: flex;
                         align-items: center;
                         justify-content: center;
                         position: relative;
                         .thumb-img-box {
                             width: 100%;
-                            height: 100%;
+                            height: auto;
                             display: flex;
                             align-items: center;
                             justify-content: center;
@@ -187,6 +187,196 @@ $font-en: "Archivo", system-ui;
                                 line-height: 1;
                                 letter-spacing: -.8px;
                                 color: $color-black;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media ( max-width: 1024px ) {
+    /* section-title-box */
+    .section-title-box {
+        span.sub-title {
+        }
+        h2.title {
+            font-size: 42px;
+        }
+        h2.title::after {
+            width: 32px;
+            height: 4px;
+            left: -46px;
+        }
+        h2.title::before {
+            width: 32px;
+            height: 4px;
+            right: -46px;
+        }
+        p.para {
+            font-size: 18px;
+            letter-spacing: -.8px;
+        }
+    }
+
+    #wrap {
+        .ir-data-content-wrap {
+            .container {
+                .section-title-box {
+
+                }
+
+                .data-list-area {
+                    .list-box {
+                        > a {
+                            .thumb-img-box {
+                                svg {
+                                    path {
+                                    }
+                                    path:nth-child(1) {
+                                    }
+                                    path:nth-child(2) {
+                                    }
+                                }
+                            }
+
+                            .text-box {
+                                padding: 20px 30px;
+                                span.title {
+                                    font-size: 38px;
+                                }
+                                span.title::after {
+                                }
+                                .icon-box {
+                                    width: 38px;
+                                    height: 38px;
+                                    img {
+                                    }
+                                }
+                            }
+                        }
+                        a:hover {
+                            .thumb-img-box {
+                                svg {
+                                    path {
+
+                                    }
+                                    path:nth-child(1) {
+                                    }
+                                    path:nth-child(2) {
+                                    }
+                                }
+                            }
+                            .text-box {
+                                span.title::after {
+                                }
+                            }
+                        }
+                        .list-title-box {
+                            a {
+                                span {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media ( max-width: 450px ) {
+    /* section-title-box */
+    .section-title-box {
+        span.sub-title {
+        }
+        h2.title {
+            font-size: 24px;
+            letter-spacing: 0px;
+            text-align: center;
+            width: 60%;
+            display: flex;
+            justify-content: center;
+            line-height: 1.4;
+            margin-bottom: 24px;
+        }
+        h2.title::after {
+            width: 24px;
+            height: 3px;
+            left: -38px;
+        }
+        h2.title::before {
+            width: 24px;
+            height: 3px;
+            right: -38px;
+        }
+        p.para {
+        }
+    }
+
+    #wrap {
+        .ir-data-content-wrap {
+            padding-top: 120px;
+            .container {
+                .section-title-box {
+
+                }
+
+                .data-list-area {
+                    .list-box {
+                        width: calc(100% / 2 - 8px);
+                        margin: 16px 4px;
+                        > a {
+                            margin-bottom: 18px;
+                            .thumb-img-box {
+                                svg {
+                                    path {
+                                    }
+                                    path:nth-child(1) {
+                                    }
+                                    path:nth-child(2) {
+                                    }
+                                }
+                            }
+
+                            .text-box {
+                                padding: 20px 20px;
+                                span.title {
+                                    font-size: 24px;
+                                    letter-spacing: -1px;
+                                }
+                                span.title::after {
+                                }
+                                .icon-box {
+                                    width: 24px;
+                                    height: 24px;
+                                    img {
+                                    }
+                                }
+                            }
+                        }
+                        a:hover {
+                            .thumb-img-box {
+                                svg {
+                                    path {
+
+                                    }
+                                    path:nth-child(1) {
+                                    }
+                                    path:nth-child(2) {
+                                    }
+                                }
+                            }
+                            .text-box {
+                                span.title::after {
+                                }
+                            }
+                        }
+                        .list-title-box {
+                            a {
+                                span {
+                                    font-size: 14px;
+                                }
                             }
                         }
                     }

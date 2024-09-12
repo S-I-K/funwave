@@ -72,6 +72,8 @@ $font-en: "Archivo", system-ui;
                             line-height: 1.5;
                             letter-spacing: -.8px;
                             color: $color-black;
+                            word-break: keep-all;
+                            white-space: pre-line;
                             span.bold {
                                 font-weight: 700;
                             }
@@ -101,6 +103,124 @@ $font-en: "Archivo", system-ui;
             .people-list-box.reverse {
                 .text-area {
                     order: 2;
+                }
+            }
+        }
+    }
+}
+
+@media ( max-width: 1024px ) {
+    /* careers: gift common css */
+    .section-title-box {
+        h2.title {
+            font-size: 42px;
+            span.bold {
+            }
+        }
+    }
+
+    #wrap {
+        .people-content-wrap {
+            .container {
+                .section-title-box {
+                    /* common css */
+                }
+
+                .people-list-box {
+                    .text-area {
+                        .text-box {
+                            span.sub-title {
+                            }
+                            h3.title {
+                            }
+                            p {
+                                span.bold {
+                                }
+                            }
+                        }
+                    }
+
+                    .img-area {
+                        .img-box {
+                            img {
+                            }
+                        }
+                    }
+                }
+
+                .people-list-box.reverse {
+                    .text-area {
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media ( max-width: 450px ) {
+    /* careers: gift common css */
+    .section-title-box {
+        margin-bottom: 60px;
+        h2.title {
+            font-size: 24px;
+            letter-spacing: -1.2px;
+            span.bold {
+            }
+        }
+    }
+
+    #wrap {
+        .people-content-wrap {
+            padding-top: 120px;
+            .container {
+                .section-title-box {
+                    /* common css */
+                }
+
+                .people-list-box {
+                    height: auto;
+                    flex-direction: column;
+                    .text-area {
+                        order: 2;
+                        width: 100%;
+                        border: none;
+                        padding: 0 14px;
+                        .text-box {
+                            span.sub-title {
+                                margin-bottom: 8px;
+                            }
+                            h3.title {
+                                font-size: 26px;
+                                letter-spacing: -1.2px;
+                                margin-bottom: 18px;
+                            }
+                            p {
+                                font-size: 16px;
+                                white-space: normal;
+                                span.bold {
+                                }
+                            }
+                        }
+                    }
+
+                    .img-area {
+                        width: 100%;
+                        height: auto;
+                        margin-bottom: 24px;
+                        .img-box {
+                            img {
+                            }
+                        }
+                    }
+                }
+
+                .people-list-box.reverse {
+                    .text-area {
+                    }
+                }
+
+                .people-list-box:not(:last-child) {
+                    margin-bottom: 60px;
                 }
             }
         }

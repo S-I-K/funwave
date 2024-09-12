@@ -66,6 +66,8 @@
   line-height: 1.5;
   letter-spacing: -0.8px;
   color: #2a2a2a;
+  word-break: keep-all;
+  white-space: pre-line;
 }
 #wrap .people-content-wrap .container .people-list-box .text-area .text-box p span.bold {
   font-weight: 700;
@@ -90,4 +92,60 @@
 }
 #wrap .people-content-wrap .container .people-list-box.reverse .text-area {
   order: 2;
+}
+
+@media (max-width: 1024px) {
+  /* careers: gift common css */
+  .section-title-box h2.title {
+    font-size: 42px;
+  }
+  #wrap .people-content-wrap .container .section-title-box {
+    /* common css */
+  }
+}
+@media (max-width: 450px) {
+  /* careers: gift common css */
+  .section-title-box {
+    margin-bottom: 60px;
+  }
+  .section-title-box h2.title {
+    font-size: 24px;
+    letter-spacing: -1.2px;
+  }
+  #wrap .people-content-wrap {
+    padding-top: 120px;
+  }
+  #wrap .people-content-wrap .container .section-title-box {
+    /* common css */
+  }
+  #wrap .people-content-wrap .container .people-list-box {
+    height: auto;
+    flex-direction: column;
+  }
+  #wrap .people-content-wrap .container .people-list-box .text-area {
+    order: 2;
+    width: 100%;
+    border: none;
+    padding: 0 14px;
+  }
+  #wrap .people-content-wrap .container .people-list-box .text-area .text-box span.sub-title {
+    margin-bottom: 8px;
+  }
+  #wrap .people-content-wrap .container .people-list-box .text-area .text-box h3.title {
+    font-size: 26px;
+    letter-spacing: -1.2px;
+    margin-bottom: 18px;
+  }
+  #wrap .people-content-wrap .container .people-list-box .text-area .text-box p {
+    font-size: 16px;
+    white-space: normal;
+  }
+  #wrap .people-content-wrap .container .people-list-box .img-area {
+    width: 100%;
+    height: auto;
+    margin-bottom: 24px;
+  }
+  #wrap .people-content-wrap .container .people-list-box:not(:last-child) {
+    margin-bottom: 60px;
+  }
 }

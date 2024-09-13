@@ -374,3 +374,162 @@ $font-en: "Archivo", system-ui;
         }
     }
 }
+
+@media ( max-width: 1024px ) {
+    /* careers: gift common css */
+    .section-title-box {
+        h2.title {
+            font-size: 42px;
+            span.bold {
+            }
+        }
+    }
+
+    /*  */
+    .list-title-box {
+        h3.title {
+            font-size: 32px;
+        }
+        h3.title::after {
+        }
+        h3.title::before {
+        }
+    }
+
+    #wrap {
+        .recruitment-part-content-wrap {
+            .container {
+                .section-title-box {
+                    /* common */
+                }
+
+                .recruitment-part-list-area {
+                    .list-title-box {
+                        /* common */
+                        h3.title {
+
+                        }
+                        h3.title::after {
+                        }
+                        h3.title::before {
+                        }
+                    }
+                    
+                    .list-item-area {
+                        .list-item-box {
+                            height: 320px;
+                            .item-title-box {
+                                span.sub-title {
+                                }
+                                span.title {
+                                    font-size: 26px;
+                                }
+                            }
+
+                            .icon-box {
+                                width: 60px;
+                                height: 60px;
+                                img {
+                                }
+                            }
+
+                            .item-content-box {
+                                ul {
+                                    li {
+                                        span {
+                                            font-size: 16px;
+                                        }
+                                    }
+                                    li::before {
+                                    }
+                                    li:not(:last-child) {
+                                        margin-bottom: 8px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .recruitment-procedure-content-wrap {
+            .container {
+                .recruitment-procedure-list-area {
+                    .list-title-box {
+                        /* common */
+                    }
+
+                    .list-item-area {
+                        .list-item-box {
+                            padding: 0 30px;
+                            .item-text-box {
+                                span.num {
+                                }
+                                span.title {
+                                    font-size: 26px;
+                                }
+                                p {
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                        .list-item-box.color {
+                            .item-text-box {
+                                span.num {
+                                }
+                                span.title {
+                                }
+                                p {
+                                }
+                            }
+                        }
+                        .list-item-box:not(:last-child)::after {
+                        }
+                        .list-item-box:not(:first-child)::before {
+                        }
+                    }
+                }
+            }
+        }
+
+        .contact-content-wrap {
+            .container {
+                .logo-area {
+                    .logo-box {
+                        img {
+                        }
+                    }
+                }
+
+                .text-area {
+                    .text-box {
+                        p {
+                            font-size: 16px;
+                            span.bold {
+                            }
+                        }
+
+                        a.contact-btn {
+                            span {
+                                font-size: 32px;
+                            }
+                        }
+                        a.contact-btn.email {
+                            span {
+                            }
+                        }
+                        a.contact-btn::after {
+                        }
+                        a.contact-btn:hover::after {
+                        }
+                        a.contact-btn:hover {
+                            span {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

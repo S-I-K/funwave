@@ -335,3 +335,54 @@
 #wrap .contact-content-wrap .container .text-area .text-box a.contact-btn:hover span {
   opacity: 1;
 }
+
+@media (max-width: 1024px) {
+  /* careers: gift common css */
+  .section-title-box h2.title {
+    font-size: 42px;
+  }
+  /*  */
+  .list-title-box h3.title {
+    font-size: 32px;
+  }
+  #wrap .recruitment-part-content-wrap .container .section-title-box {
+    /* common */
+  }
+  #wrap .recruitment-part-content-wrap .container .recruitment-part-list-area .list-title-box {
+    /* common */
+  }
+  #wrap .recruitment-part-content-wrap .container .recruitment-part-list-area .list-item-area .list-item-box {
+    height: 320px;
+  }
+  #wrap .recruitment-part-content-wrap .container .recruitment-part-list-area .list-item-area .list-item-box .item-title-box span.title {
+    font-size: 26px;
+  }
+  #wrap .recruitment-part-content-wrap .container .recruitment-part-list-area .list-item-area .list-item-box .icon-box {
+    width: 60px;
+    height: 60px;
+  }
+  #wrap .recruitment-part-content-wrap .container .recruitment-part-list-area .list-item-area .list-item-box .item-content-box ul li span {
+    font-size: 16px;
+  }
+  #wrap .recruitment-part-content-wrap .container .recruitment-part-list-area .list-item-area .list-item-box .item-content-box ul li:not(:last-child) {
+    margin-bottom: 8px;
+  }
+  #wrap .recruitment-procedure-content-wrap .container .recruitment-procedure-list-area .list-title-box {
+    /* common */
+  }
+  #wrap .recruitment-procedure-content-wrap .container .recruitment-procedure-list-area .list-item-area .list-item-box {
+    padding: 0 30px;
+  }
+  #wrap .recruitment-procedure-content-wrap .container .recruitment-procedure-list-area .list-item-area .list-item-box .item-text-box span.title {
+    font-size: 26px;
+  }
+  #wrap .recruitment-procedure-content-wrap .container .recruitment-procedure-list-area .list-item-area .list-item-box .item-text-box p {
+    font-size: 16px;
+  }
+  #wrap .contact-content-wrap .container .text-area .text-box p {
+    font-size: 16px;
+  }
+  #wrap .contact-content-wrap .container .text-area .text-box a.contact-btn span {
+    font-size: 32px;
+  }
+}

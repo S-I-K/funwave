@@ -140,12 +140,12 @@
 }
 #wrap .project-content-wrap .container .project-list-area .list-box .project-text-area .project-genre-box ul li span.kr {
   font-family: "SUIT Variable", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: -0.8px;
 }
 #wrap .project-content-wrap .container .project-list-area .list-box .project-text-area .project-genre-box ul li span.en {
   font-family: "Archivo", system-ui;
-  font-weight: 300;
+  font-weight: 400;
 }
 #wrap .project-content-wrap .container .project-list-area .list-box .project-text-area .project-genre-box ul li span:not(:last-child) {
   margin-right: 14px;
@@ -241,4 +241,135 @@
 }
 #wrap .project-content-wrap .container .project-list-area .list-box:first-child {
   border-top: 1px solid rgba(42, 42, 42, 0.8);
+}
+
+@media (max-width: 1024px) {
+  /* business common css */
+  .section-title-box span.sub-title {
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
+  .section-title-box h2.title {
+    font-size: 42px;
+  }
+  .section-title-box h2.title::after {
+    width: 32px;
+    height: 4px;
+    left: -46px;
+  }
+  .section-title-box h2.title::before {
+    width: 32px;
+    height: 4px;
+    right: -46px;
+  }
+  .section-title-box p.para {
+    font-size: 18px;
+    letter-spacing: -0.8px;
+  }
+  #wrap .project-content-wrap .container .section-title-box {
+    /* common css */
+  }
+  #wrap .project-content-wrap .container .project-list-area .list-box {
+    padding: 30px 0;
+  }
+  #wrap .project-content-wrap .container .project-list-area .list-box .project-text-area .title-box h3.title {
+    font-size: 34px;
+  }
+  #wrap .project-content-wrap .container .project-list-area .list-box .project-text-area .en-title-box span {
+    font-size: 16px;
+  }
+  #wrap .project-content-wrap .container .project-list-area .list-box .project-text-area .project-genre-box {
+    margin-bottom: 64px;
+  }
+  #wrap .project-content-wrap .container .project-list-area .list-box .project-text-area .project-genre-box ul li span {
+    font-size: 14px;
+  }
+  #wrap .project-content-wrap .container .project-list-area .list-box .project-text-area .project-link-box .link-icon-box {
+    width: 18px;
+    height: 18px;
+  }
+  #wrap .project-content-wrap .container .project-list-area .list-box .project-text-area .project-link-box ul.link-text-box li a span {
+    font-size: 14px;
+  }
+  #wrap .project-content-wrap .container .project-list-area .list-box .thumb-img-box {
+    width: 390px;
+    height: 220px;
+  }
+}
+@media (max-width: 450px) {
+  /* business common css */
+  .section-title-box span.sub-title {
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
+  .section-title-box h2.title {
+    font-size: 24px;
+    letter-spacing: 0px;
+    text-align: center;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    line-height: 1.4;
+    margin-bottom: 24px;
+  }
+  .section-title-box h2.title::after {
+    width: 24px;
+    height: 3px;
+    left: -38px;
+  }
+  .section-title-box h2.title::before {
+    width: 24px;
+    height: 3px;
+    right: -38px;
+  }
+  .section-title-box p.para {
+    font-size: 16px;
+  }
+  #wrap .project-content-wrap {
+    padding-top: 120px;
+  }
+  #wrap .project-content-wrap .container .section-title-box {
+    /* common css */
+  }
+  #wrap .project-content-wrap .container .project-list-area .list-box {
+    flex-direction: column;
+    padding: 0;
+    border: none;
+  }
+  #wrap .project-content-wrap .container .project-list-area .list-box .project-text-area {
+    order: 2;
+    width: 100%;
+    padding: 0 14px;
+  }
+  #wrap .project-content-wrap .container .project-list-area .list-box .project-text-area .title-box {
+    margin-bottom: 6px;
+  }
+  #wrap .project-content-wrap .container .project-list-area .list-box .project-text-area .title-box h3.title {
+    font-size: 28px;
+  }
+  #wrap .project-content-wrap .container .project-list-area .list-box .project-text-area .title-box h3.title::after {
+    display: none;
+  }
+  #wrap .project-content-wrap .container .project-list-area .list-box .project-text-area .en-title-box {
+    margin-bottom: 18px;
+  }
+  #wrap .project-content-wrap .container .project-list-area .list-box .project-text-area .en-title-box span {
+    font-weight: 400;
+  }
+  #wrap .project-content-wrap .container .project-list-area .list-box .project-text-area .project-genre-box {
+    margin-bottom: 48px;
+  }
+  #wrap .project-content-wrap .container .project-list-area .list-box .project-text-area .project-genre-box ul {
+    flex-wrap: wrap;
+  }
+  #wrap .project-content-wrap .container .project-list-area .list-box .project-text-area .project-genre-box ul li span {
+    line-height: 1.5;
+  }
+  #wrap .project-content-wrap .container .project-list-area .list-box .thumb-img-box {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+  #wrap .project-content-wrap .container .project-list-area .list-box:not(:last-child) {
+    margin-bottom: 80px;
+  }
 }

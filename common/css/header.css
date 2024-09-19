@@ -39,9 +39,6 @@ header .container .logo-category-wrap .logo-box a img {
   -o-object-fit: cover;
      object-fit: cover;
 }
-header .container .logo-category-wrap .category-box {
-  padding: 24px 0;
-}
 header .container .logo-category-wrap .category-box > ul {
   display: flex;
   align-items: center;
@@ -50,6 +47,7 @@ header .container .logo-category-wrap .category-box > ul > li {
   display: flex;
   justify-content: center;
   position: relative;
+  padding: 24px 0;
 }
 header .container .logo-category-wrap .category-box > ul > li > a {
   display: flex;
@@ -71,7 +69,7 @@ header .container .logo-category-wrap .category-box > ul > li .drop-menu-box {
   position: absolute;
   padding: 24px 0;
   left: 0;
-  top: 64px;
+  top: 100%;
   opacity: 0;
   visibility: hidden;
 }
@@ -117,7 +115,7 @@ header .container .logo-category-wrap .category-box > ul > li::after {
   width: 0%;
   height: 1px;
   position: absolute;
-  bottom: -26px;
+  bottom: 0px;
   background: #0050A0;
   transition: all 0.4s ease;
 }

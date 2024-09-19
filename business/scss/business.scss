@@ -146,12 +146,12 @@ $font-en: "Archivo", system-ui;
                                     }
                                     span.kr {
                                         font-family: $font-kr;
-                                        font-weight: 400;
+                                        font-weight: 500;
                                         letter-spacing: -.8px;
                                     }
                                     span.en {
                                         font-family: $font-en;
-                                        font-weight: 300;
+                                        font-weight: 400;
                                     }
                                     span:not(:last-child) {
                                         margin-right: 14px;
@@ -266,6 +266,279 @@ $font-en: "Archivo", system-ui;
                 }
                 .list-box:first-child {
                     border-top: 1px solid rgba(42, 42, 42, .8);
+                }
+            }
+        }
+    }
+}
+
+@media ( max-width: 1024px ) {
+    /* business common css */
+    .section-title-box {
+        span.sub-title {
+            font-size: 16px;
+            margin-bottom: 24px;
+        }
+        h2.title {
+            font-size: 42px;
+        }
+        h2.title::after {
+            width: 32px;
+            height: 4px;
+            left: -46px;
+        }
+        h2.title::before {
+            width: 32px;
+            height: 4px;
+            right: -46px;
+        }
+        p.para {
+            font-size: 18px;
+            letter-spacing: -0.8px;
+        }
+    }
+
+    #wrap {
+        .project-content-wrap {
+            .container {
+                .section-title-box {
+                    /* common css */
+                }
+
+                .project-list-area {
+                    .list-box {
+                        padding: 30px 0;
+                        .project-text-area {
+                            .title-box {
+                                h3.title {
+                                    font-size: 34px;
+                                }
+                                h3.title::after {
+                                }
+                            }
+
+                            .en-title-box {
+                                span {
+                                    font-size: 16px;
+                                }
+                            }
+
+                            .project-genre-box {
+                                margin-bottom: 64px;
+                                ul {
+                                    li {
+                                        span {
+                                            font-size: 14px;
+                                        }
+                                        span.kr {
+                                        }
+                                        span.en {
+                                        }
+                                        span:not(:last-child) {
+                                        }
+                                    }
+                                    li:first-child {
+                                    }
+                                    li:not(:last-child) {
+                                        
+                                    }
+                                    li:not(:last-child)::after {
+                                    }
+                                }
+                            }
+
+                            .project-link-box {
+                                .link-icon-box {
+                                    width: 18px;
+                                    height: 18px;
+                                    img {
+                                    }
+                                }
+                                ul.link-text-box {
+                                    li {
+                                        a {
+                                            span {
+                                                font-size: 14px;
+                                            }
+                                        }
+                                    }
+                                    li:first-child {
+                                    }
+                                    li:not(:last-child) {
+                                        
+                                    }
+                                    li:not(:last-child)::after {
+                                    }
+                                }
+                            }
+                        }
+
+                        .thumb-img-box {
+                            width: 390px;
+                            height: 220px;
+                            img {
+                            }
+                        }
+                    }
+                    .list-box:hover {
+                        .project-text-area {
+                            .title-box {
+                                h3.title::after {
+                                }
+                            }
+                        }
+                        .thumb-img-box {
+                            img {
+                            }
+                        }
+                    }
+                    .list-box:first-child {
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media ( max-width: 450px ) {
+    /* business common css */
+    .section-title-box {
+        span.sub-title {
+            font-size: 16px;
+            margin-bottom: 24px;
+        }
+        h2.title {
+            font-size: 24px;
+            letter-spacing: 0px;
+            text-align: center;
+            width: 60%;
+            display: flex;
+            justify-content: center;
+            line-height: 1.4;
+            margin-bottom: 24px;
+        }
+        h2.title::after {
+            width: 24px;
+            height: 3px;
+            left: -38px;
+        }
+        h2.title::before {
+            width: 24px;
+            height: 3px;
+            right: -38px;
+        }
+        p.para {
+            font-size: 16px;
+        }
+    }
+
+    #wrap {
+        .project-content-wrap {
+            padding-top: 120px;
+            .container {
+                .section-title-box {
+                    /* common css */
+                }
+
+                .project-list-area {
+                    .list-box {
+                        flex-direction: column;
+                        padding: 0;
+                        border: none;
+                        .project-text-area {
+                            order: 2;
+                            width: 100%;
+                            padding: 0 14px;
+                            .title-box {
+                                margin-bottom: 6px;
+                                h3.title {
+                                    font-size: 28px;
+                                }
+                                h3.title::after {
+                                    display: none;
+                                }
+                            }
+
+                            .en-title-box {
+                                margin-bottom: 18px;
+                                span {
+                                    font-weight: 400;
+                                }
+                            }
+
+                            .project-genre-box {
+                                margin-bottom: 48px;
+                                ul {
+                                    flex-wrap: wrap;
+                                    li {
+                                        span {
+                                            line-height: 1.5;
+                                        }
+                                        span.kr {
+                                        }
+                                        span.en {
+                                        }
+                                        span:not(:last-child) {
+                                        }
+                                    }
+                                    li:first-child {
+                                    }
+                                    li:not(:last-child) {
+                                        
+                                    }
+                                    li:not(:last-child)::after {
+                                    }
+                                }
+                            }
+
+                            .project-link-box {
+                                .link-icon-box {
+                                    img {
+                                    }
+                                }
+                                ul.link-text-box {
+                                    li {
+                                        a {
+                                            span {
+                                            }
+                                        }
+                                    }
+                                    li:first-child {
+                                    }
+                                    li:not(:last-child) {
+                                        
+                                    }
+                                    li:not(:last-child)::after {
+                                    }
+                                }
+                            }
+                        }
+
+                        .thumb-img-box {
+                            width: 100%;
+                            margin-bottom: 24px;
+                            img {
+                            }
+                        }
+                    }
+                    .list-box:hover {
+                        .project-text-area {
+                            .title-box {
+                                h3.title::after {
+                                }
+                            }
+                        }
+                        .thumb-img-box {
+                            img {
+                            }
+                        }
+                    }
+                    .list-box:first-child {
+                    }
+                    
+                    .list-box:not(:last-child) {
+                        margin-bottom: 80px;
+                    }
                 }
             }
         }

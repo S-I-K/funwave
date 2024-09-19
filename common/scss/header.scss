@@ -45,7 +45,6 @@ header {
     
             /* category-box */
             .category-box {
-                padding: 24px 0;
                 > ul {
                     display: flex;
                     align-items: center;
@@ -53,6 +52,7 @@ header {
                         display: flex;
                         justify-content: center;
                         position: relative;
+                        padding: 24px 0;
                         > a {
                             display: flex;
                             justify-content: center;
@@ -75,7 +75,7 @@ header {
                             // min-width: 120px;
                             padding: 24px 0;
                             left: 0;
-                            top: 64px;
+                            top: 100%;
                             opacity: 0;
                             visibility: hidden;
                             ul {
@@ -128,7 +128,7 @@ header {
                         width: 0%;
                         height: 1px;
                         position: absolute;
-                        bottom: -26px;
+                        bottom: 0px;
                         background: $color-main;
                         transition: all .4s ease;
                     }

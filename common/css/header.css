@@ -129,9 +129,6 @@ header .container .menu-lang-box {
   display: flex;
   align-items: center;
 }
-header .container .menu-lang-box .lang-box {
-  margin-right: 18px;
-}
 header .container .menu-lang-box .lang-box a {
   display: flex;
   align-items: center;
@@ -162,6 +159,9 @@ header .container .menu-lang-box .lang-box a .icon-box svg {
 header .container .menu-lang-box .lang-box a .icon-box svg path {
   fill: #fff;
   transition: fill 0.4s ease;
+}
+header .container .menu-lang-box .menu-box {
+  display: none;
 }
 header .container .menu-lang-box .menu-box a {
   display: flex;
@@ -222,9 +222,15 @@ header .header-bg {
     display: none;
     pointer-events: none;
   }
+  header .container .menu-lang-box .lang-box {
+    margin-right: 18px;
+  }
   header .container .menu-lang-box .lang-box a span {
     font-size: 14px;
     height: 30px;
+  }
+  header .container .menu-lang-box .menu-box {
+    display: flex;
   }
   header .container .menu-lang-box .menu-box a {
     width: 30px;

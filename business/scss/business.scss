@@ -85,7 +85,7 @@ $font-en: "Archivo", system-ui;
                     align-items: center;
                     justify-content: space-between;
                     padding: 50px 0;
-                    border-bottom: 1px solid rgba(42, 42, 42, .8);
+                    border-top: 1px solid rgba(42, 42, 42, .8);
                     .project-text-area {
                         display: flex;
                         flex-direction: column;
@@ -265,7 +265,10 @@ $font-en: "Archivo", system-ui;
                     }
                 }
                 .list-box:first-child {
-                    border-top: 1px solid rgba(42, 42, 42, .8);
+                    // border-top: 1px solid rgba(42, 42, 42, .8);
+                }
+                .list-box:last-child {
+                    // border-bottom: none;
                 }
             }
         }

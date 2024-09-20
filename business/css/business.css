@@ -76,7 +76,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 50px 0;
-  border-bottom: 1px solid rgba(42, 42, 42, 0.8);
+  border-top: 1px solid rgba(42, 42, 42, 0.8);
 }
 #wrap .project-content-wrap .container .project-list-area .list-box .project-text-area {
   display: flex;
@@ -239,10 +239,6 @@
 #wrap .project-content-wrap .container .project-list-area .list-box:hover .thumb-img-box img {
   scale: 1.06;
 }
-#wrap .project-content-wrap .container .project-list-area .list-box:first-child {
-  border-top: 1px solid rgba(42, 42, 42, 0.8);
-}
-
 @media (max-width: 1024px) {
   /* business common css */
   .section-title-box span.sub-title {

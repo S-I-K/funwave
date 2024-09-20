@@ -147,7 +147,6 @@ header {
             display: flex;
             align-items: center;
             .lang-box {
-                margin-right: 18px;
                 a {
                     display: flex;
                     align-items: center;
@@ -181,6 +180,7 @@ header {
             }
 
             .menu-box {
+                display: none;
                 a {
                     // border: 1px solid red;
                     display: flex;
@@ -354,6 +354,7 @@ header {
             /* menu-lang-box */
             .menu-lang-box {
                 .lang-box {
+                    margin-right: 18px;
                     a {
                         span {
                             font-size: 14px;
@@ -369,6 +370,7 @@ header {
                 }
     
                 .menu-box {
+                    display: flex;
                     a {
                         width: 30px;
                         height: 30px;

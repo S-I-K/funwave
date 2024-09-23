@@ -207,6 +207,12 @@ header {
             }
         }
     }
+
+    /* mobile-menu-area */
+    .mobile-menu-area {
+        display: none;
+    }
+
     .header-bg {
         position: absolute;
         width: 100%;
@@ -382,6 +388,114 @@ header {
                         }
                         span:nth-child(2) {
                             bottom: 17px;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        /* mobile-menu-area */
+        .mobile-menu-area {
+            // border: 1px solid red;
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            background: #fff;
+            width: 100%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            display: none;
+            .container {
+                flex-direction: column;
+                padding-top: 0;
+                padding-bottom: 0;
+                .menu-list-box {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    h4.menu-content-title {
+                        width: 100%;
+                        padding: 20px 0;
+                        border-bottom: 1px solid $color-black;
+                        a {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            span {
+                                font-family: $font-en;
+                                font-weight: 600;
+                                font-size: 16px;
+                                line-height: 1;
+                                color: $color-black;
+                                transition: rotate .4s ease;
+                            }
+                            .icon-box {
+                                width: 16px;
+                                height: 16px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                position: relative;
+                                span {
+                                    display: block;
+                                    background: $color-black;
+                                    position: absolute;
+                                }
+                                span:nth-child(1) {
+                                    width: 100%;
+                                    height: 2px;
+                                }
+                                span:nth-child(2) {
+                                    width: 2px;
+                                    height: 100%;
+                                }
+                            }
+                        }
+                    }
+
+                    .menu-content-box {
+                        display: none;
+                        .list-container {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                            padding: 32px 0;
+                            a {
+                                span {
+                                    font-size: 14px;
+                                    line-height: 1;
+                                    color: $color-black;
+                                }
+                                span.kr {
+                                    font-family: $font-kr;
+                                    font-weight: 600;
+                                    letter-spacing: -.8px;
+                                }
+                                span.en {
+                                    font-family: $font-en;
+                                    font-weight: 500;
+                                }
+                            }
+                            a:not(:last-child) {
+                                margin-bottom: 24px;
+                            }
+                        }
+                    }
+                }
+
+                .menu-list-box.active {
+                    h4.menu-content-title {
+                        a {
+                            .icon-box {
+                                span:nth-child(2) {
+                                    rotate: 90deg;
+                                }
+                            }
                         }
                     }
                 }

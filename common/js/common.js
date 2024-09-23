@@ -222,7 +222,7 @@ $(()=>{
     });
 
     $('.menu-list-box').click(function(e) {
-        e.preventDefault();
+        // e.preventDefault();
         var $contentBox = $(this).find('.menu-content-box');
         // 이미 활성화된 카테고리를 다시 클릭한 경우 슬라이드 업
         if ($(this).hasClass('active')) {

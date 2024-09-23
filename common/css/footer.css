@@ -71,6 +71,10 @@ footer .container .contact-area .contact-list-box ul li span.copy {
 footer .container .contact-area .contact-list-box ul li:not(:last-child) {
   margin-bottom: 12px;
 }
+footer .container .contact-area .contact-list-box ul li:nth-child(3),
+footer .container .contact-area .contact-list-box ul li:nth-child(4) {
+  display: none;
+}
 
 @media (max-width: 450px) {
   footer {

@@ -475,7 +475,8 @@ $font-en: "Archivo", system-ui;
                                     flex-wrap: wrap;
                                     li {
                                         span {
-                                            line-height: 1.5;
+                                            // line-height: 1.5;
+                                            word-break: keep-all;
                                         }
                                         span.kr {
                                         }

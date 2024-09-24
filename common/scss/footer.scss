@@ -35,54 +35,69 @@ footer {
 
         .contact-area {
             display: flex;
+            flex-direction: column;
             align-items: flex-start;
-            .title-box {
-                margin-right: 82px;
-                span {
-                    font-family: $font-en;
-                    font-weight: 600;
-                    font-size: 18px;
-                    line-height: 1;
-                    color: $color-black;
+            .contact-box {
+                display: flex;
+                align-items: flex-start;
+                .title-box {
+                    // margin-right: 82px;
+                    min-width: 160px;
+                    span {
+                        font-family: $font-en;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 1;
+                        color: $color-black;
+                    }
+                }
+                .contact-list-box {
+                    ul {
+                        li {
+                            display: flex;
+                            align-items: flex-start;
+                            justify-content: flex-start;
+                            span {
+                                font-size: 16px;
+                                line-height: 1.5;
+                                color: $color-black;
+                                display: flex;
+                                word-break: keep-all;
+                            }
+                            span.name {
+                                font-family: $font-en;
+                                font-weight: 300;
+                                min-width: 80px;
+                                margin-right: 42px;
+                            }
+                            span.content {
+                                font-family: $font-kr;
+                                font-weight: 400;
+                                width: 300px;
+                            }
+                            span.copy {
+                                font-family: $font-en;
+                                font-weight: 300;
+                            }
+                            p {
+                                max-width: 422px;
+                                font-family: $font-kr;
+                                font-weight: 400;
+                                font-size: 16px;
+                                line-height: 1.5;
+                                letter-spacing: -.8px;
+                                color: $color-black;
+                                word-break: keep-all;
+                            }
+                        }
+                        li:not(:last-child) {
+                            margin-bottom: 14px;
+                        }
+                    }
                 }
             }
-            .contact-list-box {
-                ul {
-                    li {
-                        display: flex;
-                        align-items: flex-start;
-                        justify-content: flex-start;
-                        span {
-                            font-size: 18px;
-                            line-height: 1.5;
-                            color: $color-black;
-                            display: flex;
-                            word-break: keep-all;
-                        }
-                        span.name {
-                            font-family: $font-en;
-                            font-weight: 300;
-                            min-width: 80px;
-                            margin-right: 42px;
-                        }
-                        span.content {
-                            font-family: $font-kr;
-                            font-weight: 400;
-                            width: 300px;
-                        }
-                        span.copy {
-                            font-family: $font-en;
-                            font-weight: 300;
-                        }
-                    }
-                    li:not(:last-child) {
-                        margin-bottom: 12px;
-                    }
-                    li:nth-child(3),
-                    li:nth-child(4) {
-                        display: none;
-                    }
-                }
+            .contact-box:not(:last-child) {
+                margin-bottom: 42px;
             }
         }
     }
@@ -99,23 +114,25 @@ footer {
             }
     
             .contact-area {
-                .title-box {
-                    span {
-                    }
-                }
-                .contact-list-box {
-                    ul {
-                        li {
-                            span {
-                            }
-                            span.name {
-                            }
-                            span.content {
-                            }
-                            span.copy {
-                            }
+                .contact-box {
+                    .title-box {
+                        span {
                         }
-                        li:not(:last-child) {
+                    }
+                    .contact-list-box {
+                        ul {
+                            li {
+                                span {
+                                }
+                                span.name {
+                                }
+                                span.content {
+                                }
+                                span.copy {
+                                }
+                            }
+                            li:not(:last-child) {
+                            }
                         }
                     }
                 }
@@ -143,34 +160,40 @@ footer {
             .contact-area {
                 flex-direction: column;
                 align-items: center;
-                .title-box {
-                    margin: 0;
-                    display: none;
-                    span {
-                    }
-                }
-                .contact-list-box {
-                    ul {
-                        display: flex;
-                        flex-direction: column;
-                        align-items: flex-start;
-                        li {
-                            span {
-                                font-size: 14px;
-                                letter-spacing: 0;
-                            }
-                            span.name {
-                                min-width: 60px;
-                                margin-right: 24px;
-                            }
-                            span.content {
-                                width: 240px;
-                            }
-                            span.copy {
-                            }
+                .contact-box {
+                    .title-box {
+                        margin: 0;
+                        display: none;
+                        span {
                         }
-                        li:not(:last-child) {
-                            margin-bottom: 16px;
+                    }
+                    .contact-list-box {
+                        ul {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-start;
+                            li {
+                                span {
+                                    font-size: 14px;
+                                    letter-spacing: 0;
+                                }
+                                span.name {
+                                    min-width: 60px;
+                                    margin-right: 24px;
+                                }
+                                span.content {
+                                    width: 240px;
+                                }
+                                span.copy {
+                                }
+                                p {
+                                    max-width: 324px;
+                                    font-size: 14px;
+                                }
+                            }
+                            li:not(:last-child) {
+                                margin-bottom: 16px;
+                            }
                         }
                     }
                 }

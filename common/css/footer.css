@@ -29,51 +29,65 @@ footer .container .logo-area .logo-box img {
 }
 footer .container .contact-area {
   display: flex;
+  flex-direction: column;
   align-items: flex-start;
 }
-footer .container .contact-area .title-box {
-  margin-right: 82px;
+footer .container .contact-area .contact-box {
+  display: flex;
+  align-items: flex-start;
 }
-footer .container .contact-area .title-box span {
+footer .container .contact-area .contact-box .title-box {
+  min-width: 160px;
+}
+footer .container .contact-area .contact-box .title-box span {
   font-family: "Archivo", system-ui;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1;
   color: #2a2a2a;
 }
-footer .container .contact-area .contact-list-box ul li {
+footer .container .contact-area .contact-box .contact-list-box ul li {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
 }
-footer .container .contact-area .contact-list-box ul li span {
-  font-size: 18px;
+footer .container .contact-area .contact-box .contact-list-box ul li span {
+  font-size: 16px;
   line-height: 1.5;
   color: #2a2a2a;
   display: flex;
   word-break: keep-all;
 }
-footer .container .contact-area .contact-list-box ul li span.name {
+footer .container .contact-area .contact-box .contact-list-box ul li span.name {
   font-family: "Archivo", system-ui;
   font-weight: 300;
   min-width: 80px;
   margin-right: 42px;
 }
-footer .container .contact-area .contact-list-box ul li span.content {
+footer .container .contact-area .contact-box .contact-list-box ul li span.content {
   font-family: "SUIT Variable", sans-serif;
   font-weight: 400;
   width: 300px;
 }
-footer .container .contact-area .contact-list-box ul li span.copy {
+footer .container .contact-area .contact-box .contact-list-box ul li span.copy {
   font-family: "Archivo", system-ui;
   font-weight: 300;
 }
-footer .container .contact-area .contact-list-box ul li:not(:last-child) {
-  margin-bottom: 12px;
+footer .container .contact-area .contact-box .contact-list-box ul li p {
+  max-width: 422px;
+  font-family: "SUIT Variable", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.8px;
+  color: #2a2a2a;
+  word-break: keep-all;
 }
-footer .container .contact-area .contact-list-box ul li:nth-child(3),
-footer .container .contact-area .contact-list-box ul li:nth-child(4) {
-  display: none;
+footer .container .contact-area .contact-box .contact-list-box ul li:not(:last-child) {
+  margin-bottom: 14px;
+}
+footer .container .contact-area .contact-box:not(:last-child) {
+  margin-bottom: 42px;
 }
 
 @media (max-width: 450px) {
@@ -96,27 +110,31 @@ footer .container .contact-area .contact-list-box ul li:nth-child(4) {
     flex-direction: column;
     align-items: center;
   }
-  footer .container .contact-area .title-box {
+  footer .container .contact-area .contact-box .title-box {
     margin: 0;
     display: none;
   }
-  footer .container .contact-area .contact-list-box ul {
+  footer .container .contact-area .contact-box .contact-list-box ul {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
   }
-  footer .container .contact-area .contact-list-box ul li span {
+  footer .container .contact-area .contact-box .contact-list-box ul li span {
     font-size: 14px;
     letter-spacing: 0;
   }
-  footer .container .contact-area .contact-list-box ul li span.name {
+  footer .container .contact-area .contact-box .contact-list-box ul li span.name {
     min-width: 60px;
     margin-right: 24px;
   }
-  footer .container .contact-area .contact-list-box ul li span.content {
+  footer .container .contact-area .contact-box .contact-list-box ul li span.content {
     width: 240px;
   }
-  footer .container .contact-area .contact-list-box ul li:not(:last-child) {
+  footer .container .contact-area .contact-box .contact-list-box ul li p {
+    max-width: 324px;
+    font-size: 14px;
+  }
+  footer .container .contact-area .contact-box .contact-list-box ul li:not(:last-child) {
     margin-bottom: 16px;
   }
 }

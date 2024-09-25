@@ -10,8 +10,8 @@ $(()=>{
     /* header scroll logo change event */
     $(window).scroll(()=>{
         console.log(window.scrollY);
-        if($(window).width() >= 450) { /* PC */
-            if(window.scrollY >= 60 ) {
+        if($(window).width() >= 450) {
+            if(window.scrollY >= 60 ) { /* PC */
                 $('header .container .logo-category-wrap .logo-box a img').attr('src', './img/logo.png');
                 $('header .container .logo-category-wrap .category-box ul li a span').css({
                     color: '#2a2a2a',
@@ -47,7 +47,7 @@ $(()=>{
                 });
             }
         }else{ /* mobile */
-            if(window.scrollY >= 550 ) {
+            if(window.scrollY >= 130 ) {
                 $('header .container .logo-category-wrap .logo-box a img').attr('src', './img/logo.png');
                 $('header .container .logo-category-wrap .category-box ul li a span').css({
                     color: '#2a2a2a',

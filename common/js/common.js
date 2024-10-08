@@ -68,7 +68,7 @@ $(()=>{
                 $('header .container .logo-category-wrap .logo-box a img').attr('src', './img/logo-white.png');
                 $('header .container .logo-category-wrap .category-box ul li a span').css({
                     color: '#fff',
-                });
+                }); 
                 $('header .container .menu-lang-box .lang-box a span').css({
                     color: '#fff',
                 });
